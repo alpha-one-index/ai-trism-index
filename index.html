@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI TRiSM Market Index — Alpha One Index</title>
+  <meta name="description" content="Comprehensive index of 66+ AI Trust, Risk, and Security Management (AI TRiSM) vendors. Market data, regulatory tracker, and Gartner-recognized solutions. Updated automatically.">
+  <meta name="author" content="Alpha One Index">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://alpha-one-index.github.io/ai-trism-index/">
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI TRiSM Market Index — 66+ Vendors, Market Data, Regulatory Tracker">
+  <meta property="og:description" content="Machine-readable index of AI Trust, Risk &amp; Security Management vendors. Covers governance platforms, LLM guardrails, red teaming, model monitoring, data privacy, and compliance tools. Market forecast: $2.95B (2025) → $21B (2035).">
+  <meta property="og:url" content="https://alpha-one-index.github.io/ai-trism-index/">
+  <meta property="og:site_name" content="Alpha One Index">
+  <meta property="og:image" content="https://alpha-one-index.github.io/ai-trism-index/og-image.png">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI TRiSM Market Index — 66+ Vendors &amp; Market Data">
+  <meta name="twitter:description" content="Open dataset: AI Trust, Risk &amp; Security Management vendors, market sizing, regulatory tracker. $2.95B market growing to $21B by 2035.">
+  <meta name="twitter:image" content="https://alpha-one-index.github.io/ai-trism-index/og-image.png">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "AI TRiSM Market Index",
+      "description": "Comprehensive machine-readable dataset covering 66+ AI Trust, Risk, and Security Management (AI TRiSM) vendors, market sizing from 8 analyst firms, global regulatory compliance tracking (EU AI Act, NIST AI RMF, ISO 42001), and M&A/funding activity for 2022\u20132026.",
+      "url": "https://alpha-one-index.github.io/ai-trism-index/",
+      "identifier": "https://github.com/alpha-one-index/ai-trism-index",
+      "creator": {
+        "@type": "Organization",
+        "name": "Alpha One Index",
+        "url": "https://github.com/alpha-one-index"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Alpha One Index"
+      },
+      "datePublished": "2026-03-01",
+      "dateModified": "2026-03-01",
+      "version": "1.0.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": ["AI TRiSM", "AI governance", "AI security", "responsible AI", "EU AI Act", "NIST AI RMF", "LLM security", "model monitoring", "AI red teaming"],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "name": "Vendor Database",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://raw.githubusercontent.com/alpha-one-index/ai-trism-index/main/data/vendors.json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Market Data",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://raw.githubusercontent.com/alpha-one-index/ai-trism-index/main/data/market-data.json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Regulatory Tracker",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://raw.githubusercontent.com/alpha-one-index/ai-trism-index/main/data/regulatory-tracker.json"
+        }
+      ],
+      "measurementTechnique": "Manual research augmented by automated web monitoring; vendor data from official press releases, Gartner research citations, analyst reports",
+      "spatialCoverage": "Global",
+      "temporalCoverage": "2013/2026"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "AI TRiSM Market Index — Automation Scripts",
+      "description": "Python automation scripts for fetching live vendor data and validating JSON data quality. Uses Python stdlib only; designed for GitHub Actions.",
+      "codeRepository": "https://github.com/alpha-one-index/ai-trism-index",
+      "programmingLanguage": "Python",
+      "license": "https://opensource.org/licenses/MIT",
+      "author": {
+        "@type": "Organization",
+        "name": "Alpha One Index"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is AI TRiSM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI TRiSM (AI Trust, Risk, and Security Management) is a framework coined by Gartner in 2022 encompassing the tools and practices for ensuring AI systems are trustworthy, fair, secure, and compliant. It covers AI governance, explainability, runtime security (prompt injection defense), model monitoring, data privacy, and regulatory compliance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the AI TRiSM market size?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The AI TRiSM market is estimated at approximately $2.95 billion in 2025 (Precedence Research) growing to $21.06 billion by 2035 at a CAGR of 21.72%. The AI Governance sub-market is growing faster at 45.3% CAGR, from $890 million (2024) to $5.78 billion by 2029 (MarketsandMarkets)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which AI TRiSM vendors are recognized by Gartner in 2025?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gartner 2025 AI TRiSM Market Guide Representative Vendors include Lasso Security, Prompt Security (acquired by SentinelOne), Zenity, Proofpoint, Concentric AI, and LatticeFlow AI. Gartner Cool Vendors in Agentic AI TRiSM 2025: Aim Security (acquired by Cato Networks), vijil, Zenity. Credo AI named Gartner Cool Vendor in AI Cybersecurity Governance 2025."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the EU AI Act compliance deadline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Key EU AI Act dates: Prohibited AI practices banned February 2, 2025; GPAI (General Purpose AI) rules apply August 2, 2025; High-risk AI system obligations (Annex III) apply August 2, 2026; Full enforcement by August 2, 2027. Penalties: up to \u20ac35 million or 7% of global annual revenue for prohibited AI violations."
+          }
+        }
+      ]
+    }
+  ]
+  </script>
+
+  <style>
+    :root {
+      --bg-primary: #0d1117;
+      --bg-secondary: #161b22;
+      --bg-tertiary: #21262d;
+      --border: #30363d;
+      --border-light: #21262d;
+      --text-primary: #e6edf3;
+      --text-secondary: #8b949e;
+      --text-muted: #656d76;
+      --accent: #58a6ff;
+      --accent-dim: #1f6feb;
+      --green: #3fb950;
+      --green-dim: #1a7f37;
+      --yellow: #d29922;
+      --red: #f85149;
+      --purple: #bc8cff;
+      --orange: #f0883e;
+      --cyan: #79c0ff;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+    .nav-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      gap: 16px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+    .nav-logo .badge {
+      background: var(--accent-dim);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 100px;
+      letter-spacing: 0.03em;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-secondary);
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.15s, background 0.15s;
+    }
+    .nav-links a:hover { color: var(--text-primary); background: var(--bg-tertiary); text-decoration: none; }
+    .nav-github {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      color: var(--text-primary) !important;
+      padding: 6px 14px !important;
+      border-radius: var(--radius-sm) !important;
+      font-size: 13px !important;
+      font-weight: 600 !important;
+    }
+
+    .container { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 48px 0; }
+
+    .hero { padding: 64px 0 48px; text-align: center; }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(88, 166, 255, 0.1);
+      border: 1px solid rgba(88, 166, 255, 0.3);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 52px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #e6edf3 0%, #79c0ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-desc { font-size: 18px; color: var(--text-secondary); max-width: 680px; margin: 0 auto 32px; line-height: 1.7; }
+    .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 600; transition: all 0.15s; cursor: pointer; }
+    .btn-primary { background: var(--accent-dim); color: #fff; border: 1px solid rgba(88, 166, 255, 0.4); }
+    .btn-primary:hover { background: #388bfd; text-decoration: none; }
+    .btn-secondary { background: var(--bg-tertiary); color: var(--text-primary); border: 1px solid var(--border); }
+    .btn-secondary:hover { background: #2d333b; text-decoration: none; }
+
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin: 32px 0; }
+    .stat-card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px 16px; text-align: center; }
+    .stat-number { font-size: 32px; font-weight: 800; letter-spacing: -0.03em; color: var(--accent); line-height: 1.1; }
+    .stat-label { font-size: 12px; color: var(--text-secondary); margin-top: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; }
+    .section-title { font-size: 22px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+    .section-title::before { content: ''; display: block; width: 4px; height: 22px; background: var(--accent); border-radius: 2px; }
+
+    .filter-bar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; align-items: center; }
+    .filter-bar input, .filter-bar select { background: var(--bg-secondary); border: 1px solid var(--border); color: var(--text-primary); padding: 7px 12px; border-radius: var(--radius-sm); font-size: 13px; font-family: var(--font-sans); }
+    .filter-bar input { min-width: 220px; flex: 1; }
+    .filter-bar input:focus, .filter-bar select:focus { outline: none; border-color: var(--accent-dim); box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.25); }
+    .filter-bar select option { background: var(--bg-secondary); }
+
+    .table-wrapper { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-md); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    thead tr { background: var(--bg-tertiary); border-bottom: 1px solid var(--border); }
+    th { padding: 12px 14px; text-align: left; font-weight: 600; color: var(--text-secondary); font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; white-space: nowrap; }
+    tbody tr { border-bottom: 1px solid var(--border-light); transition: background 0.1s; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: rgba(255,255,255,0.02); }
+    td { padding: 12px 14px; vertical-align: middle; }
+    td a { color: var(--accent); }
+    .vendor-name { font-weight: 600; color: var(--text-primary); }
+
+    .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 100px; white-space: nowrap; }
+    .badge-active { background: rgba(63, 185, 80, 0.15); color: var(--green); }
+    .badge-acquired { background: rgba(240, 136, 62, 0.15); color: var(--orange); }
+    .badge-gartner { background: rgba(188, 140, 255, 0.15); color: var(--purple); }
+    .badge-cat { background: rgba(88, 166, 255, 0.1); color: var(--cyan); border: 1px solid rgba(88, 166, 255, 0.2); }
+
+    .caps { display: flex; flex-wrap: wrap; gap: 4px; max-width: 340px; }
+    .cap-pill { background: var(--bg-tertiary); color: var(--text-secondary); font-size: 11px; padding: 2px 7px; border-radius: 100px; border: 1px solid var(--border); }
+
+    .chart-section { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px; margin-bottom: 24px; }
+    .chart-title { font-size: 14px; font-weight: 600; color: var(--text-secondary); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .bar-chart { display: flex; flex-direction: column; gap: 12px; }
+    .bar-row { display: grid; grid-template-columns: 180px 1fr 80px; align-items: center; gap: 12px; font-size: 13px; }
+    .bar-label { color: var(--text-secondary); font-size: 12px; text-align: right; }
+    .bar-track { background: var(--bg-tertiary); border-radius: 4px; height: 22px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--accent-dim), var(--accent)); transition: width 1s ease; display: flex; align-items: center; padding-left: 8px; font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.85); min-width: 2px; }
+    .bar-value { color: var(--text-primary); font-weight: 600; font-size: 13px; }
+
+    .market-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    @media (max-width: 768px) { .market-grid { grid-template-columns: 1fr; } }
+
+    .reg-grid { display: grid; gap: 16px; }
+    .reg-card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px 24px; }
+    .reg-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 8px; }
+    .reg-name { font-size: 16px; font-weight: 700; }
+    .reg-jurisdiction { font-size: 11px; color: var(--text-secondary); background: var(--bg-tertiary); padding: 3px 10px; border-radius: 100px; border: 1px solid var(--border); }
+    .timeline { display: flex; flex-direction: column; gap: 0; margin-top: 12px; position: relative; }
+    .timeline::before { content: ''; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--border); }
+    .timeline-item { display: grid; grid-template-columns: 18px 1fr; gap: 12px; padding: 6px 0; align-items: start; }
+    .timeline-dot { width: 16px; height: 16px; border-radius: 50%; background: var(--bg-tertiary); border: 2px solid var(--border); flex-shrink: 0; margin-top: 2px; position: relative; z-index: 1; }
+    .timeline-dot.past { border-color: var(--green-dim); background: rgba(63,185,80,0.2); }
+    .timeline-dot.upcoming { border-color: var(--yellow); background: rgba(210,153,34,0.2); }
+    .timeline-dot.future { border-color: var(--border); }
+    .timeline-date { font-size: 11px; color: var(--accent); font-weight: 600; font-family: var(--font-mono); }
+    .timeline-milestone { font-size: 13px; color: var(--text-primary); font-weight: 500; }
+    .timeline-desc { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+
+    .mna-badge { background: rgba(248,81,73,0.15); color: var(--red); }
+    .loading { text-align: center; padding: 60px 20px; color: var(--text-secondary); }
+    .spinner { display: inline-block; width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 12px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .pill { background: var(--bg-tertiary); border: 1px solid var(--border); color: var(--text-secondary); font-size: 12px; padding: 4px 12px; border-radius: 100px; }
+    .pill strong { color: var(--text-primary); }
+
+    footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 32px 0; margin-top: 48px; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-text { color: var(--text-muted); font-size: 13px; }
+    .footer-links { display: flex; gap: 16px; }
+    .footer-links a { color: var(--text-muted); font-size: 13px; }
+    .footer-links a:hover { color: var(--accent); }
+
+    .update-bar { background: rgba(63, 185, 80, 0.08); border: 1px solid rgba(63, 185, 80, 0.2); border-radius: var(--radius-sm); padding: 8px 16px; font-size: 12px; color: var(--green); display: flex; align-items: center; gap: 8px; margin-bottom: 24px; }
+    .update-dot { width: 6px; height: 6px; background: var(--green); border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+    @media (max-width: 900px) { .nav-links { display: none; } .hero h1 { font-size: 28px; } th:nth-child(n+5), td:nth-child(n+5) { display: none; } }
+    @media (max-width: 600px) { .container { padding: 0 16px; } section { padding: 32px 0; } }
+
+    .segment-row { display: flex; flex-direction: column; gap: 10px; }
+    .seg-item { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+    .seg-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+    .seg-label { flex: 1; color: var(--text-secondary); }
+    .seg-pct { font-weight: 700; color: var(--text-primary); font-size: 14px; min-width: 40px; text-align: right; }
+    .seg-track { flex: 2; background: var(--bg-tertiary); border-radius: 3px; height: 6px; }
+    .seg-fill { height: 6px; border-radius: 3px; }
+    #vendor-count-badge { background: var(--bg-tertiary); color: var(--text-secondary); font-size: 12px; padding: 3px 10px; border-radius: 100px; border: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner container">
+      <div class="nav-logo">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10" cy="10" r="9" stroke="#58a6ff" stroke-width="1.5"/>
+          <path d="M10 4v6l4 2" stroke="#58a6ff" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="10" cy="10" r="2" fill="#58a6ff"/>
+        </svg>
+        AI TRiSM Index
+        <span class="badge">Alpha One</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#vendors">Vendors</a></li>
+        <li><a href="#market">Market</a></li>
+        <li><a href="#regulations">Regulations</a></li>
+        <li><a href="#mna">M&amp;A</a></li>
+        <li><a href="https://github.com/alpha-one-index/ai-trism-index" class="nav-github" target="_blank" rel="noopener">GitHub ↗</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge">AI Trust · Risk · Security Management</div>
+      <h1>AI TRiSM Market Index</h1>
+      <p class="hero-desc">
+        Comprehensive machine-readable index of <strong>66+ vendors</strong> shaping the AI Trust, Risk, and Security Management landscape — from governance platforms to runtime guardrails, red teaming, observability, and compliance tools.
+      </p>
+      <div class="hero-actions">
+        <a href="data/vendors.json" class="btn btn-primary" target="_blank">vendors.json</a>
+        <a href="data/market-data.json" class="btn btn-secondary" target="_blank">market-data.json</a>
+        <a href="data/regulatory-tracker.json" class="btn btn-secondary" target="_blank">regulatory-tracker.json</a>
+        <a href="https://github.com/alpha-one-index/ai-trism-index" class="btn btn-secondary" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="update-bar">
+      <div class="update-dot"></div>
+      Auto-updated hourly via GitHub Actions · Last updated: <span id="last-updated">2026-03-01</span> · Data: CC BY 4.0
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-number" id="stat-vendors">66+</div><div class="stat-label">Vendors Indexed</div></div>
+      <div class="stat-card"><div class="stat-number">10</div><div class="stat-label">Categories</div></div>
+      <div class="stat-card"><div class="stat-number">$2.95B</div><div class="stat-label">2025 Market Size</div></div>
+      <div class="stat-card"><div class="stat-number">21.7%</div><div class="stat-label">CAGR (2026-2035)</div></div>
+      <div class="stat-card"><div class="stat-number">8</div><div class="stat-label">M&amp;A Deals (2024-25)</div></div>
+      <div class="stat-card"><div class="stat-number" id="stat-gartner">6+</div><div class="stat-label">Gartner Recognized</div></div>
+    </div>
+  </div>
+
+  <section id="vendors">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Vendor Index</h2>
+        <span id="vendor-count-badge">Loading...</span>
+      </div>
+      <div class="filter-bar">
+        <input type="text" id="search-input" placeholder="Search vendors, capabilities, HQ..." oninput="filterTable()">
+        <select id="cat-filter" onchange="filterTable()">
+          <option value="">All Categories</option>
+          <option value="ai_governance">AI Governance</option>
+          <option value="ai_runtime_security">Runtime Security / Guardrails</option>
+          <option value="ai_explainability_fairness">Explainability &amp; Fairness</option>
+          <option value="ai_red_teaming_security_testing">Red Teaming &amp; Security Testing</option>
+          <option value="ai_model_monitoring_observability">Model Monitoring &amp; Observability</option>
+          <option value="ai_data_privacy_protection">Data Privacy &amp; Protection</option>
+          <option value="ai_content_safety_moderation">Content Safety &amp; Moderation</option>
+          <option value="ai_compliance_regulatory">Compliance / Regulatory</option>
+          <option value="large_cloud_vendor_trism">Large Cloud Vendors</option>
+          <option value="emerging_specialist_vendors">Emerging &amp; Specialists</option>
+        </select>
+        <select id="status-filter" onchange="filterTable()">
+          <option value="">All Statuses</option>
+          <option value="Active">Active</option>
+          <option value="Acquired">Acquired</option>
+        </select>
+        <select id="gartner-filter" onchange="filterTable()">
+          <option value="">All Vendors</option>
+          <option value="true">Gartner Recognized Only</option>
+        </select>
+      </div>
+      <div id="vendor-table-container">
+        <div class="loading"><div class="spinner"></div><div>Loading vendor data…</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="market">
+    <div class="container">
+      <div class="section-header"><h2 class="section-title">Market Intelligence</h2></div>
+      <div class="market-grid">
+        <div class="chart-section">
+          <div class="chart-title">Market Size Estimates — Multiple Analysts (Billion USD)</div>
+          <div class="bar-chart" id="market-chart"><div class="loading"><div class="spinner"></div></div></div>
+        </div>
+        <div class="chart-section">
+          <div class="chart-title">Market Segments (2025)</div>
+          <div style="margin-bottom:20px">
+            <div style="font-size:12px;color:var(--text-muted);margin-bottom:8px">BY INDUSTRY VERTICAL</div>
+            <div class="segment-row">
+              <div class="seg-item"><div class="seg-dot" style="background:#58a6ff"></div><span class="seg-label">BFSI</span><div class="seg-track"><div class="seg-fill" style="width:35.8%;background:#58a6ff"></div></div><span class="seg-pct">35.8%</span></div>
+              <div class="seg-item"><div class="seg-dot" style="background:#3fb950"></div><span class="seg-label">IT &amp; Telecom</span><div class="seg-track"><div class="seg-fill" style="width:22%;background:#3fb950"></div></div><span class="seg-pct">~22%</span></div>
+              <div class="seg-item"><div class="seg-dot" style="background:#bc8cff"></div><span class="seg-label">Healthcare</span><div class="seg-track"><div class="seg-fill" style="width:14%;background:#bc8cff"></div></div><span class="seg-pct">~14%</span></div>
+              <div class="seg-item"><div class="seg-dot" style="background:#f0883e"></div><span class="seg-label">Gov / Defense</span><div class="seg-track"><div class="seg-fill" style="width:12%;background:#f0883e"></div></div><span class="seg-pct">~12%</span></div>
+              <div class="seg-item"><div class="seg-dot" style="background:#d29922"></div><span class="seg-label">Other</span><div class="seg-track"><div class="seg-fill" style="width:16.2%;background:#d29922"></div></div><span class="seg-pct">~16%</span></div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:12px;color:var(--text-muted);margin-bottom:8px">BY DEPLOYMENT</div>
+            <div class="segment-row">
+              <div class="seg-item"><div class="seg-dot" style="background:#58a6ff"></div><span class="seg-label">Cloud</span><div class="seg-track"><div class="seg-fill" style="width:71.1%;background:#58a6ff"></div></div><span class="seg-pct">71.1%</span></div>
+              <div class="seg-item"><div class="seg-dot" style="background:#8b949e"></div><span class="seg-label">On-Premises</span><div class="seg-track"><div class="seg-fill" style="width:28.9%;background:#8b949e"></div></div><span class="seg-pct">28.9%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chart-section">
+        <div class="chart-title">Notable Funding Rounds (2022–2026)</div>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Company</th><th>Round</th><th>Amount</th><th>Date</th><th>Lead Investor</th></tr></thead>
+            <tbody id="funding-table-body"><tr><td colspan="5" class="loading" style="text-align:center;padding:20px">Loading…</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="regulations">
+    <div class="container">
+      <div class="section-header"><h2 class="section-title">Regulatory Deadline Tracker</h2></div>
+      <div class="reg-grid" id="reg-grid"><div class="loading"><div class="spinner"></div><div>Loading regulatory data…</div></div></div>
+    </div>
+  </section>
+
+  <section id="mna">
+    <div class="container">
+      <div class="section-header"><h2 class="section-title">M&amp;A Activity (2024–2025)</h2></div>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Target</th><th>Acquirer</th><th>Price</th><th>Date</th><th>Strategic Rationale</th></tr></thead>
+          <tbody id="mna-table-body"><tr><td colspan="5" style="text-align:center;padding:20px;color:var(--text-secondary)">Loading…</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="data">
+    <div class="container">
+      <div class="section-header"><h2 class="section-title">Data Files</h2></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+        <a href="data/vendors.json" style="text-decoration:none" target="_blank">
+          <div class="chart-section" style="cursor:pointer" onmouseenter="this.style.borderColor='#58a6ff'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px"><div style="font-weight:700;color:var(--text-primary)">vendors.json</div><div class="badge badge-active">66+ entries</div></div>
+            <div style="font-size:13px;color:var(--text-secondary)">Machine-readable vendor database with funding, capabilities, Gartner recognition, and acquisition status across 10 categories.</div>
+          </div>
+        </a>
+        <a href="data/market-data.json" style="text-decoration:none" target="_blank">
+          <div class="chart-section" style="cursor:pointer" onmouseenter="this.style.borderColor='#58a6ff'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px"><div style="font-weight:700;color:var(--text-primary)">market-data.json</div><div class="badge badge-cat">8 analysts</div></div>
+            <div style="font-size:13px;color:var(--text-secondary)">Market size estimates, segment breakdowns by vertical/deployment/tech, regional analysis, funding rounds, and M&amp;A activity.</div>
+          </div>
+        </a>
+        <a href="data/regulatory-tracker.json" style="text-decoration:none" target="_blank">
+          <div class="chart-section" style="cursor:pointer" onmouseenter="this.style.borderColor='#58a6ff'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px"><div style="font-weight:700;color:var(--text-primary)">regulatory-tracker.json</div><div class="badge badge-gartner">10 regulations</div></div>
+            <div style="font-size:13px;color:var(--text-secondary)">EU AI Act, NIST AI RMF, ISO 42001, GDPR, SR 11-7, US state laws, China AI regulations — key dates, penalties, enforcement milestones.</div>
+          </div>
+        </a>
+        <a href="croissant.json" style="text-decoration:none" target="_blank">
+          <div class="chart-section" style="cursor:pointer" onmouseenter="this.style.borderColor='#58a6ff'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px"><div style="font-weight:700;color:var(--text-primary)">croissant.json</div><div class="badge badge-cat">MLCommons 1.0</div></div>
+            <div style="font-size:13px;color:var(--text-secondary)">MLCommons Croissant 1.0 dataset card for ML tooling integration, HuggingFace, and dataset discovery.</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-text">© 2026 Alpha One Index · AI TRiSM Market Index v1.0.0 · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></div>
+        <div class="footer-links">
+          <a href="llms.txt">llms.txt</a>
+          <a href="sitemap.xml">sitemap.xml</a>
+          <a href="CITATION.cff">CITATION.cff</a>
+          <a href="provenance.md">Provenance</a>
+          <a href="https://github.com/alpha-one-index/ai-trism-index" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  let vendorsData = null, marketData = null, regulatoryData = null, flatVendors = [];
+  const CAT_LABELS = {
+    ai_governance: 'AI Governance', ai_runtime_security: 'Runtime Security',
+    ai_explainability_fairness: 'Explainability & Fairness', ai_red_teaming_security_testing: 'Red Teaming',
+    ai_model_monitoring_observability: 'Model Monitoring', ai_data_privacy_protection: 'Data Privacy',
+    ai_content_safety_moderation: 'Content Safety', ai_compliance_regulatory: 'Compliance / Regulatory',
+    large_cloud_vendor_trism: 'Cloud Vendors', emerging_specialist_vendors: 'Emerging / Specialist',
+  };
+
+  async function loadData() {
+    try {
+      const [vr, mr, rr] = await Promise.allSettled([
+        fetch('data/vendors.json').then(r => r.json()),
+        fetch('data/market-data.json').then(r => r.json()),
+        fetch('data/regulatory-tracker.json').then(r => r.json()),
+      ]);
+      if (vr.status === 'fulfilled') vendorsData = vr.value;
+      if (mr.status === 'fulfilled') marketData = mr.value;
+      if (rr.status === 'fulfilled') regulatoryData = rr.value;
+    } catch (e) { console.warn('Data load error:', e); }
+    if (vendorsData) buildVendorTable();
+    if (marketData) buildMarketData();
+    if (regulatoryData) buildRegulatoryTracker();
+    buildMnATable();
+  }
+
+  function buildVendorTable() {
+    const categories = vendorsData.categories || {};
+    flatVendors = [];
+    for (const [catKey, cat] of Object.entries(categories))
+      for (const v of (cat.vendors || []))
+        flatVendors.push({ ...v, _category: catKey, _catLabel: CAT_LABELS[catKey] || catKey });
+    const total = flatVendors.length;
+    const gartnerCount = flatVendors.filter(v => v.gartner_recognized).length;
+    document.getElementById('stat-vendors').textContent = total + '+';
+    document.getElementById('stat-gartner').textContent = gartnerCount + '+';
+    if (vendorsData.metadata?.last_updated)
+      document.getElementById('last-updated').textContent = vendorsData.metadata.last_updated.split('T')[0];
+    renderTable(flatVendors);
+  }
+
+  function renderTable(vendors) {
+    document.getElementById('vendor-count-badge').textContent = `${vendors.length} vendors`;
+    const container = document.getElementById('vendor-table-container');
+    if (vendors.length === 0) { container.innerHTML = '<div style="padding:40px;text-align:center;color:var(--text-secondary)">No vendors match your filters.</div>'; return; }
+    const rows = vendors.map(v => {
+      const caps = (v.capabilities || []).slice(0, 4).map(c => `<span class="cap-pill">${escHtml(c)}</span>`).join('');
+      const website = v.website ? `<a href="${escHtml(v.website)}" target="_blank" rel="noopener">${escHtml(v.name)}</a>` : escHtml(v.name);
+      const status = v.status === 'Acquired' ? '<span class="badge badge-acquired">Acquired</span>' : '<span class="badge badge-active">Active</span>';
+      const gartner = v.gartner_recognized ? '<span class="badge badge-gartner">Gartner</span>' : '';
+      return `<tr><td class="vendor-name">${website}</td><td><span class="badge badge-cat">${escHtml(v._catLabel)}</span></td><td>${escHtml(v.hq||'—')}</td><td>${escHtml(String(v.founded||'—'))}</td><td>${escHtml(String(v.funding_total||'—'))}</td><td>${status} ${gartner}</td><td><div class="caps">${caps}</div></td></tr>`;
+    }).join('');
+    container.innerHTML = `<div class="table-wrapper"><table id="vendor-table"><thead><tr><th>Vendor</th><th>Category</th><th>HQ</th><th>Founded</th><th>Funding</th><th>Status</th><th>Capabilities</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+
+  function filterTable() {
+    const q = document.getElementById('search-input').value.toLowerCase().trim();
+    const cat = document.getElementById('cat-filter').value;
+    const status = document.getElementById('status-filter').value;
+    const gartner = document.getElementById('gartner-filter').value;
+    renderTable(flatVendors.filter(v => {
+      if (q && !(v.name+' '+v.hq+' '+(v.capabilities||[]).join(' ')).toLowerCase().includes(q)) return false;
+      if (cat && v._category !== cat) return false;
+      if (status && (v.status||'Active') !== status) return false;
+      if (gartner === 'true' && !v.gartner_recognized) return false;
+      return true;
+    }));
+  }
+
+  function buildMarketData() {
+    const estimates = marketData.market_size?.estimates || [];
+    const maxVal = Math.max(...estimates.map(e => e.year_2035||e.year_2034||e.year_2033||e.year_2030||10));
+    const rows = estimates.map(e => {
+      const future = e.year_2035||e.year_2034||e.year_2033||e.year_2030||null;
+      const label = `${e.analyst}${e.scope?' ('+e.scope.replace(' (broad)','').replace(' (narrow)','')+')':''}`;
+      const fillW = future ? Math.round((future/maxVal)*100) : 10;
+      return `<div class="bar-row"><div class="bar-label">${escHtml(label)}</div><div class="bar-track"><div class="bar-fill" style="width:${fillW}%">${future?'$'+future+'B':''}</div></div><div class="bar-value">${future?'$'+future+'B':'—'}</div></div>`;
+    }).join('');
+    document.getElementById('market-chart').innerHTML = rows || '<div style="color:var(--text-secondary)">No data</div>';
+    const fundingRows = (marketData.funding_rounds||[]).map(fr => {
+      const amount = fr.amount_usd_millions ? `$${fr.amount_usd_millions}M` : '—';
+      return `<tr><td class="vendor-name">${escHtml(fr.company||'—')}</td><td>${escHtml(fr.round||'—')}</td><td style="font-weight:700;color:var(--green)">${amount}</td><td style="font-family:var(--font-mono);font-size:12px">${(fr.date||'').substring(0,7)}</td><td style="color:var(--text-secondary)">${escHtml(fr.lead_investor||'—')}</td></tr>`;
+    }).join('');
+    document.getElementById('funding-table-body').innerHTML = fundingRows || '<tr><td colspan="5">No data</td></tr>';
+  }
+
+  function buildRegulatoryTracker() {
+    const regs = regulatoryData.regulations||[];
+    const today = new Date();
+    const cards = regs.map(reg => {
+      const dates = (reg.key_dates||[]).slice(0,6);
+      const timelineItems = dates.map(kd => {
+        const d = new Date(kd.date);
+        const isPast = d < today;
+        const isUpcoming = !isPast && (d-today) < 1000*60*60*24*365;
+        const cls = isPast?'past':(isUpcoming?'upcoming':'future');
+        return `<div class="timeline-item"><div class="timeline-dot ${cls}"></div><div class="timeline-content"><div class="timeline-date">${kd.date}</div><div class="timeline-milestone">${escHtml(kd.milestone)}</div>${kd.description?`<div class="timeline-desc">${escHtml(kd.description.substring(0,120))}${kd.description.length>120?'…':''}</div>`:''}</div></div>`;
+      }).join('');
+      const pen = reg.penalties;
+      let penaltyStr = '';
+      if (pen&&pen.prohibited_ai_max_fine_euros) penaltyStr=`<span class="pill"><strong>Max fine:</strong> €${(pen.prohibited_ai_max_fine_euros/1e6).toFixed(0)}M or ${pen.prohibited_ai_max_revenue_percent}% revenue</span>`;
+      else if (pen&&pen.max_fine_euros) penaltyStr=`<span class="pill"><strong>Max fine:</strong> €${(pen.max_fine_euros/1e6).toFixed(0)}M or ${pen.max_revenue_percent}% revenue</span>`;
+      const srcLink = reg.source_url?`<a href="${reg.source_url}" target="_blank" rel="noopener" style="font-size:12px;color:var(--accent)">Official Source ↗</a>`:'';
+      return `<div class="reg-card"><div class="reg-header"><div><div class="reg-name">${escHtml(reg.name)}</div><div style="font-size:13px;color:var(--text-secondary);margin-top:2px">${escHtml(reg.full_name||'')}</div></div><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="reg-jurisdiction">${escHtml(reg.jurisdiction)}</span><span class="badge ${reg.status==='Enacted'||reg.status.includes('Active')?'badge-active':'badge-gartner'}">${escHtml(reg.status)}</span>${srcLink}</div></div>${penaltyStr?`<div class="pill-row">${penaltyStr}</div>`:''}<div class="timeline" style="margin-top:14px">${timelineItems}</div></div>`;
+    }).join('');
+    document.getElementById('reg-grid').innerHTML = cards||'<p style="color:var(--text-secondary)">No regulatory data available.</p>';
+  }
+
+  function buildMnATable() {
+    const deals = marketData?.acquisitions || [
+      {target:'Securiti AI',acquirer:'Veeam',price_usd_billions:1.725,date:'2025-12-01',strategic_rationale:'DSPM + AI governance + data resilience convergence',source_url:'https://www.veeam.com/company/press-release/veeam-acquires-securiti-ai.html'},
+      {target:'CalypsoAI',acquirer:'F5 Networks',price_usd_millions:180,date:'2025-09-01',strategic_rationale:'GenAI red teaming as platform feature',source_url:'https://cyberscoop.com/f5-to-acquire-ai-security-firm-calypsoai-for-180-million/'},
+      {target:'Robust Intelligence',acquirer:'Cisco',price_note:'Undisclosed (~$200M+ implied)',date:'2024-08-01',strategic_rationale:'AI model security for Cisco Security Cloud',source_url:'https://www.securityweek.com/cisco-to-acquire-ai-security-firm-robust-intelligence/'},
+      {target:'Prompt Security',acquirer:'SentinelOne',price_note:'Undisclosed',date:'2025-01-01',strategic_rationale:'GenAI security into EDR/XDR platform',source_url:''},
+      {target:'Aporia',acquirer:'Coralogix',price_note:'Undisclosed',date:'2024-12-01',strategic_rationale:'AI observability into full-stack monitoring',source_url:'https://techcrunch.com/2024/12/23/coralogix-acquires-ai-observability-platform-aporia/'},
+      {target:'Aim Security',acquirer:'Cato Networks',price_note:'Undisclosed',date:'2025-09-01',strategic_rationale:'Agentic AI TRiSM into SASE platform',source_url:''},
+      {target:'Protect AI',acquirer:'Palo Alto Networks',price_note:'Undisclosed',date:'2024-01-01',strategic_rationale:'AI/ML model security powering Prisma AIRS',source_url:''},
+      {target:'WhyLabs',acquirer:'Apple',price_note:'Undisclosed (assets/talent)',date:'2025-01-01',strategic_rationale:'AI monitoring talent and technology acquisition',source_url:''},
+    ];
+    const rows = deals.map(d => {
+      let price;
+      if (d.price_usd_billions) price=`<strong style="color:var(--green)">$${d.price_usd_billions}B</strong>`;
+      else if (d.price_usd_millions) price=`<strong style="color:var(--green)">$${d.price_usd_millions}M</strong>`;
+      else price=`<span style="color:var(--text-secondary)">${escHtml(d.price_note||'Undisclosed')}</span>`;
+      const targetCell = d.source_url?`<td class="vendor-name"><a href="${escHtml(d.source_url)}" target="_blank" rel="noopener">${escHtml(d.target)}</a></td>`:`<td class="vendor-name">${escHtml(d.target)}</td>`;
+      return `<tr>${targetCell}<td>${escHtml(d.acquirer)}</td><td>${price}</td><td style="font-family:var(--font-mono);font-size:12px">${(d.date||'').substring(0,7)}</td><td style="color:var(--text-secondary);font-size:13px">${escHtml((d.strategic_rationale||'').substring(0,100))}${d.strategic_rationale?.length>100?'…':''}</td></tr>`;
+    }).join('');
+    document.getElementById('mna-table-body').innerHTML = rows;
+  }
+
+  function escHtml(s) {
+    if (s===null||s===undefined) return '';
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  loadData();
+  </script>
+</body>
+</html>
