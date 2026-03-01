@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-01T13:42:37Z",
+  "generated_at": "2026-03-01T15:44:38Z",
   "overall_status": "PASS",
   "summary": {
     "errors": 0,
@@ -9,18 +9,77 @@
     "urls_dead": 0
   },
   "schema_findings": [
-    {"file": "vendors.json","source_urls_found": 96},
-    {"file": "market-data.json","source_urls_found": 28},
-    {"file": "regulatory-tracker.json","source_urls_found": 11}
+    {
+      "file": "vendors.json",
+      "source_urls_found": 2026-03-01T15:44:38Z [INFO] Validation report saved to /home/runner/work/ai-trism-index/ai-trism-index/data/validation-report.json
+{
+  "generated_at": "2026-03-01T15:44:38Z",
+  "overall_status": "PASS",
+  "summary": {
+    "errors": 0,
+    "warnings": 6,
+    "urls_checked": 0,
+    "urls_live": 0,
+    "urls_dead": 0
+  },
+  "schema_findings": [
+    {
+      "file": "vendors.json",
+      "source_urls_found": 96
+    },
+    {
+      "file": "market-data.json",
+      "source_urls_found": 28
+    },
+    {
+      "file": "regulatory-tracker.json",
+      "source_urls_found": 11
+    }
   ],
   "errors": [],
   "warnings": [
-    {"severity": "warning","category": "data_format","message": "Vendor 'Proofpoint' has unusual funding_total format","location": "categories.ai_data_privacy_protection.vendors[3].funding_total","value": "Taken private ($12.3B acquisition by Thoma Bravo, 2021)"},
-    {"severity": "warning","category": "data_format","message": "Vendor 'Azure AI Content Safety (Microsoft)' has unusual funding_total format","location": "categories.ai_content_safety_moderation.vendors[0].funding_total","value": "Microsoft (Public: MSFT)"},
-    {"severity": "warning","category": "data_format","message": "Vendor 'Google Perspective API / Vertex AI Safety' has unusual funding_total format","location": "categories.ai_content_safety_moderation.vendors[1].funding_total","value": "Google (Public: GOOGL)"},
-    {"severity": "warning","category": "data_format","message": "Vendor 'AWS AI Content Moderation' has unusual funding_total format","location": "categories.ai_content_safety_moderation.vendors[2].funding_total","value": "Amazon (Public: AMZN)"},
-    {"severity": "warning","category": "data_range","message": "Vendor 'IBM \u2014 watsonx.governance' has unusual founded year","location": "categories.large_cloud_vendor_trism.vendors[0].founded","value": "1911"},
-    {"severity": "warning","category": "data_range","message": "Vendor 'FICO' has unusual founded year","location": "categories.emerging_specialist_vendors.vendors[18].founded","value": "1956"}
+    {
+      "severity": "warning",
+      "category": "data_format",
+      "message": "Vendor 'Proofpoint' has unusual funding_total format",
+      "location": "categories.ai_data_privacy_protection.vendors[3].funding_total",
+      "value": "Taken private ($12.3B acquisition by Thoma Bravo, 2021)"
+    },
+    {
+      "severity": "warning",
+      "category": "data_format",
+      "message": "Vendor 'Azure AI Content Safety (Microsoft)' has unusual funding_total format",
+      "location": "categories.ai_content_safety_moderation.vendors[0].funding_total",
+      "value": "Microsoft (Public: MSFT)"
+    },
+    {
+      "severity": "warning",
+      "category": "data_format",
+      "message": "Vendor 'Google Perspective API / Vertex AI Safety' has unusual funding_total format",
+      "location": "categories.ai_content_safety_moderation.vendors[1].funding_total",
+      "value": "Google (Public: GOOGL)"
+    },
+    {
+      "severity": "warning",
+      "category": "data_format",
+      "message": "Vendor 'AWS AI Content Moderation' has unusual funding_total format",
+      "location": "categories.ai_content_safety_moderation.vendors[2].funding_total",
+      "value": "Amazon (Public: AMZN)"
+    },
+    {
+      "severity": "warning",
+      "category": "data_range",
+      "message": "Vendor 'IBM — watsonx.governance' has unusual founded year",
+      "location": "categories.large_cloud_vendor_trism.vendors[0].founded",
+      "value": "1911"
+    },
+    {
+      "severity": "warning",
+      "category": "data_range",
+      "message": "Vendor 'FICO' has unusual founded year",
+      "location": "categories.emerging_specialist_vendors.vendors[18].founded",
+      "value": "1956"
+    }
   ],
   "url_health": []
 }

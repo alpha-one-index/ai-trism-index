@@ -1,28 +1,593 @@
 {
   "metadata": {
-    "last_updated": "2026-03-01T13:00:00Z",
+    "last_updated": "2026-03-01T15:44:38Z",
     "version": "1.0.0",
     "description": "Global AI regulatory compliance tracker with key milestones, penalties, and enforcement dates",
-    "source": "Alpha One Index \u2014 AI TRiSM Market Index",
+    "source": "Alpha One Index — AI TRiSM Market Index",
     "repository": "https://github.com/alpha-one-index/ai-trism-index",
     "license": "CC BY 4.0"
   },
   "regulations": [
-    {"id": "eu-ai-act","name": "EU AI Act","full_name": "Regulation (EU) 2024/1689 of the European Parliament and of the Council \u2014 Artificial Intelligence Act","jurisdiction": "European Union","status": "Enacted","enacted_date": "2024-08-01","key_dates": [{"milestone": "Entry into force","date": "2024-08-01","description": "Regulation entered into force; grace periods begin"},{"milestone": "Prohibited AI practices ban","date": "2025-02-02","description": "Prohibition on unacceptable-risk AI systems applies (Article 5): social scoring, subliminal manipulation, real-time biometric surveillance in public spaces"},{"milestone": "GPAI rules apply","date": "2025-08-02","description": "General Purpose AI (GPAI) model rules apply, including obligations for providers of foundation models"},{"milestone": "AI literacy obligations","date": "2025-08-02","description": "AI literacy training obligations for AI providers and deployers take effect"},{"milestone": "High-risk obligations (Annex III)","date": "2026-08-02","description": "High-risk AI systems in Annex III categories (HR, education, critical infrastructure, etc.) must comply with full transparency, data governance, and human oversight requirements"},{"milestone": "Product safety high-risk AI","date": "2027-08-02","description": "High-risk AI systems subject to existing EU product safety legislation must comply"},{"milestone": "Full enforcement","date": "2027-08-02","description": "Full Act enforcement including all remaining provisions"}],"risk_classification": {"unacceptable_risk": "Prohibited (e.g., social scoring, real-time biometric surveillance)","high_risk": "Heavy obligations: conformity assessment, data governance, transparency, human oversight, cybersecurity","limited_risk": "Transparency obligations (e.g., disclose AI-generated content)","minimal_risk": "No obligations (e.g., spam filters, AI-enabled video games)"},"penalties": {"prohibited_ai_max_fine_euros": 35000000,"prohibited_ai_max_revenue_percent": 7,"high_risk_violations_max_fine_euros": 15000000,"high_risk_violations_max_revenue_percent": 3,"incorrect_info_max_fine_euros": 7500000,"incorrect_info_max_revenue_percent": 1.5,"sme_reduced_penalties": true},"source_url": "https://artificialintelligenceact.eu/","official_text_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689","trism_relevance": ["AI governance","bias detection","explainability","human oversight","technical documentation","conformity assessment","GPAI transparency"]},
-    {"id": "nist-ai-rmf","name": "NIST AI RMF","full_name": "NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0)","jurisdiction": "United States (Federal)","status": "Voluntary Framework (Active)","enacted_date": "2023-01-26","key_dates": [{"milestone": "AI RMF 1.0 published","date": "2023-01-26","description": "NIST releases AI RMF 1.0 with GOVERN, MAP, MEASURE, MANAGE core functions"},{"milestone": "AI RMF Playbook released","date": "2023-03-01","description": "Companion Playbook providing implementation guidance"},{"milestone": "GenAI Profile published","date": "2024-07-01","description": "NIST AI 600-1: AI RMF generative AI profile addressing GenAI-specific risks"}],"core_functions": ["GOVERN","MAP","MEASURE","MANAGE"],"key_risk_categories": ["CBRN Information","Confabulation (hallucination)","Data Privacy","Data Poisoning","Human-AI Configuration","Information Integrity","Information Security","Intellectual Property","Obscene/Abusive/Undesirable Content","Societal Impacts","Value Chain and Component Integration"],"penalties": null,"adoption": "Widely adopted by US federal agencies; referenced in US Executive Orders; basis for many state AI laws","source_url": "https://www.nist.gov/system/files/documents/2023/01/26/AI%20RMF%201.0.pdf","official_page": "https://www.nist.gov/artificial-intelligence/executive-order-safe-secure-and-trustworthy-artificial-intelligence","trism_relevance": ["AI governance","risk management","bias detection","explainability","model monitoring","AI security"]},
-    {"id": "iso-42001","name": "ISO/IEC 42001","full_name": "ISO/IEC 42001:2023 \u2014 Information technology \u2014 Artificial intelligence \u2014 Management system","jurisdiction": "International (ISO/IEC)","status": "Published (Active)","enacted_date": "2023-12-18","key_dates": [{"milestone": "ISO/IEC 42001:2023 published","date": "2023-12-18","description": "First international standard for AI management systems; defines requirements for responsible AI development, deployment, and use"},{"milestone": "Certifications begin","date": "2024-06-01","description": "Certification bodies begin issuing ISO 42001 compliance certificates to organizations"}],"scope": "AI management system requirements for organizations developing, providing, or using AI products and services","key_clauses": ["Clause 4: Context of the organization","Clause 5: Leadership","Clause 6: Planning (AI risk and impact assessment)","Clause 7: Support","Clause 8: Operation","Clause 9: Performance evaluation","Clause 10: Improvement"],"annex_a_controls": "36 controls across AI policy, roles, resources, impact assessment, AI system lifecycle, data management, human oversight","certification_available": true,"source_url": "https://www.iso.org/standard/81230.html","trism_relevance": ["AI governance","risk management","compliance","model lifecycle management","data governance"]},
-    {"id": "us-eo-14110","name": "US Executive Order 14110","full_name": "Executive Order 14110 on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence","jurisdiction": "United States (Federal)","status": "Signed (Active \u2014 some provisions rolled back)","enacted_date": "2023-10-30","key_dates": [{"milestone": "EO 14110 signed","date": "2023-10-30","description": "Biden Administration signs comprehensive AI executive order"},{"milestone": "NIST AI safety standards directed","date": "2024-01-01","description": "NIST directed to develop AI safety and security standards; dual-use foundation model requirements"},{"milestone": "Partial rescission","date": "2025-01-20","description": "Trump Administration rescinds EO 14110; some agency guidance remains"}],"key_provisions": ["Dual-use foundation model safety testing","NIST AI safety standards development","Watermarking AI-generated content","Federal AI risk management","AI in critical infrastructure security"],"source_url": "https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/","trism_relevance": ["AI safety","AI security","dual-use model governance","federal AI compliance"]},
-    {"id": "us-state-ai-laws","name": "US State AI Laws","full_name": "US State-Level AI Legislation (Colorado, Illinois, Texas, New York, California, Connecticut, others)","jurisdiction": "United States (State Level)","status": "Multiple \u2014 enacted and pending","key_dates": [{"milestone": "Colorado AI Act signed","date": "2024-05-17","description": "Colorado SB 205 signed \u2014 first US state comprehensive AI law; high-risk AI governance requirements effective February 1, 2026"},{"milestone": "Colorado AI Act effective","date": "2026-02-01","description": "Colorado AI Act enforcement begins for high-risk AI systems"},{"milestone": "Illinois AI Video Interview Act","date": "2020-01-01","description": "Illinois AI Video Interview Act (2019) requires employer disclosure and bias testing for AI hiring tools"},{"milestone": "New York City Local Law 144","date": "2023-07-05","description": "NYC LL144 requires bias audits for automated employment decision tools; in effect"},{"milestone": "California AI legislation","date": "2025-01-01","description": "Multiple California AI bills; Governor vetoed SB 1047 (foundation model safety) in September 2024; AB 2013 requires training data disclosures"}],"key_jurisdictions": [{"state": "Colorado","law": "SB 205 (AI Act)","effective": "2026-02-01","scope": "High-risk AI systems; developer and deployer obligations"},{"state": "Illinois","law": "AI Video Interview Act; HB 3773 (amendment)","effective": "2020-01-01","scope": "AI in hiring decisions"},{"state": "New York City","law": "Local Law 144","effective": "2023-07-05","scope": "Automated employment decision tools; mandatory bias audits"},{"state": "Texas","law": "Texas Responsible AI Governance Act (SB 2024)","effective": "Proposed 2025","scope": "High-risk AI systems"}],"source_url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2024-legislation","trism_relevance": ["AI governance","bias audits","hiring AI compliance","high-risk AI"]},
-    {"id": "china-ai-regulations","name": "China AI Regulations","full_name": "China Generative AI Measures + CAC Algorithm Registration Requirements","jurisdiction": "China (People's Republic of China)","status": "Enacted (Active)","key_dates": [{"milestone": "Algorithm Recommendation Measures effective","date": "2022-03-01","description": "CAC rules on algorithmic recommendation services take effect"},{"milestone": "Deep Synthesis Measures effective","date": "2023-01-10","description": "CAC rules on deep synthesis (deepfakes) take effect"},{"milestone": "Generative AI Measures effective","date": "2023-08-15","description": "CAC Interim Measures for the Management of Generative Artificial Intelligence Services take effect; content safety, transparency, and data requirements"},{"milestone": "AI Foundation Model Registration","date": "2023-08-15","description": "GPAI providers must register foundation models with CAC; security assessments for public-facing services"}],"key_provisions": ["Mandatory registration for public-facing generative AI services","Content safety and accuracy requirements","Training data sourcing legality requirements","Label requirements for AI-generated content","Security assessments for foundation models"],"source_url": "https://www.cac.gov.cn/","trism_relevance": ["AI governance","content safety","model registration","data governance"]},
-    {"id": "uk-ai-regulation","name": "UK AI Regulatory Framework","full_name": "UK Pro-innovation Approach to AI Regulation + AI Safety Institute","jurisdiction": "United Kingdom","status": "Framework active; legislation pending","key_dates": [{"milestone": "UK AI White Paper published","date": "2023-03-29","description": "UK government publishes pro-innovation AI regulatory approach; principles-based rather than legislation"},{"milestone": "UK AI Safety Institute established","date": "2023-11-01","description": "UK AI Safety Institute (AISI) launched; frontier AI safety evaluations"},{"milestone": "Frontier AI Safety Commitments","date": "2023-11-01","description": "Bletchley AI Safety Summit; 16 AI companies sign voluntary safety commitments"},{"milestone": "UK AI Action Plan","date": "2025-01-13","description": "UK releases AI Opportunities Action Plan; regulatory clarity for AI deployment"}],"key_provisions": ["Sector-specific regulator approach (FCA, ICO, CMA each apply principles to their domain)","Five cross-sector AI principles: safety, security and robustness; transparency and explainability; fairness; accountability and governance; contestability and redress","Financial services AI: SS1/23 Dear CEO letter (model risk management)","ICO AI and data protection guidance"],"penalties": {"notes": "Sector regulators enforce using existing powers (FCA, ICO, CMA etc.); ICO can fine up to \u00a317.5M or 4% of global annual turnover"},"source_url": "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach","trism_relevance": ["AI governance","fairness","explainability","financial services AI compliance"]},
-    {"id": "sr-11-7","name": "SR 11-7","full_name": "Federal Reserve / OCC SR Letter 11-7: Guidance on Model Risk Management","jurisdiction": "United States (Banking Regulators)","status": "Active Guidance","enacted_date": "2011-04-04","key_dates": [{"milestone": "SR 11-7 issued","date": "2011-04-04","description": "Fed/OCC guidance on model risk management; establishes MRM framework for banks"},{"milestone": "Application to AI/ML models clarified","date": "2021-01-01","description": "Regulators clarify SR 11-7 applies to AI/ML models used in credit decisions, AML, stress testing"}],"key_requirements": ["Model development documentation","Independent model validation","Ongoing monitoring","Approval and review workflows","Inventory of all models","Governance policies and procedures"],"penalties": {"notes": "Banking regulators can impose MRAs (Matters Requiring Attention), cease-and-desist orders, civil money penalties"},"source_url": "https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm","trism_relevance": ["model governance","model risk management","financial services AI compliance","model validation"]},
-    {"id": "gdpr-ai","name": "GDPR (AI Implications)","full_name": "General Data Protection Regulation \u2014 AI and Automated Decision-Making Provisions","jurisdiction": "European Union","status": "Enacted (Active since 2018)","enacted_date": "2018-05-25","key_dates": [{"milestone": "GDPR enforcement begins","date": "2018-05-25","description": "GDPR becomes enforceable; Article 22 (automated decision-making) applies to AI"},{"milestone": "EDPB AI Guidelines","date": "2024-05-01","description": "EDPB publishes Guidelines on AI and data protection"}],"ai_specific_provisions": ["Article 22: Right not to be subject to solely automated decisions with significant effect; requires human oversight","Article 13-15: Transparency and explainability requirements for automated processing","Article 35: DPIA (Data Protection Impact Assessment) required for high-risk AI processing","Recital 71: Explanations for automated decisions"],"penalties": {"max_fine_euros": 20000000,"max_revenue_percent": 4,"notes": "Higher tier for Article 22 violations"},"source_url": "https://gdpr-info.eu/art-22-gdpr/","trism_relevance": ["data privacy","AI explainability","automated decision-making governance","bias detection"]},
-    {"id": "hipaa-ai","name": "HIPAA (AI in Healthcare)","full_name": "Health Insurance Portability and Accountability Act \u2014 AI Applications in Healthcare","jurisdiction": "United States (Healthcare)","status": "Active Guidance","enacted_date": "1996-08-21","key_dates": [{"milestone": "HHS AI Strategy","date": "2023-11-01","description": "HHS publishes AI strategy for health and human services"},{"milestone": "FDA AI/ML Software as Medical Device guidance","date": "2024-03-01","description": "FDA updates guidance on AI/ML-based Software as a Medical Device (SaMD)"}],"key_requirements": ["PHI protection in AI training data","Business Associate Agreements for AI vendors processing PHI","Risk analysis for AI systems handling PHI","FDA SaMD oversight for clinical AI tools"],"penalties": {"max_annual_civil_fine_usd": 1919173,"criminal_penalties": true},"source_url": "https://www.hhs.gov/hipaa/index.html","trism_relevance": ["data privacy","healthcare AI compliance","model governance","clinical AI safety"]},
-    {"id": "canada-aida","name": "Canada AIDA","full_name": "Canada Artificial Intelligence and Data Act (Bill C-27)","jurisdiction": "Canada","status": "Proposed (Pending Parliament)","key_dates": [{"milestone": "Bill C-27 introduced","date": "2022-06-16","description": "Canada introduces Artificial Intelligence and Data Act as part of Bill C-27 (alongside Consumer Privacy Protection Act)"},{"milestone": "Second reading","date": "2023-04-01","description": "AIDA progresses to second reading in Parliament; significant revisions proposed"},{"milestone": "Status uncertain","date": "2025-01-01","description": "AIDA status uncertain following Canadian federal political changes; legislation may be reintroduced"}],"key_provisions": ["High-impact AI system obligations: impact assessments, risk mitigation, monitoring, anomaly reporting","Prohibition on AI causing serious harm or biased outputs","AI and Data Commissioner","Penalties up to 3% of global revenue for non-compliance"],"penalties": {"max_revenue_percent": 3,"notes": "Penalties for non-compliance with compliance orders; criminal penalties for reckless harm"},"source_url": "https://ised-isde.canada.ca/site/innovation-better-canada/en/artificial-intelligence-and-data-act","trism_relevance": ["AI governance","high-impact AI compliance","bias prevention"]}
+    {
+      "id": "eu-ai-act",
+      "name": "EU AI Act",
+      "full_name": "Regulation (EU) 2024/1689 of the European Parliament and of the Council — Artificial Intelligence Act",
+      "jurisdiction": "European Union",
+      "status": "Enacted",
+      "enacted_date": "2024-08-01",
+      "key_dates": [
+        {
+          "milestone": "Entry into force",
+          "date": "2024-08-01",
+          "description": "Regulation entered into force; grace periods begin"
+        },
+        {
+          "milestone": "Prohibited AI practices ban",
+          "date": "2025-02-02",
+          "description": "Prohibition on unacceptable-risk AI systems applies (Article 5): social scoring, subliminal manipulation, real-time biometric surveillance in public spaces"
+        },
+        {
+          "milestone": "GPAI rules apply",
+          "date": "2025-08-02",
+          "description": "General Purpose AI (GPAI) model rules apply, including obligations for providers of foundation models"
+        },
+        {
+          "milestone": "AI literacy obligations",
+          "date": "2025-08-02",
+          "description": "AI literacy training obligations for AI providers and deployers take effect"
+        },
+        {
+          "milestone": "High-risk obligations (Annex III)",
+          "date": "2026-08-02",
+          "description": "High-risk AI systems in Annex III categories (HR, education, critical infrastructure, etc.) must comply with full transparency, data governance, and human oversight requirements"
+        },
+        {
+          "milestone": "Product safety high-risk AI",
+          "date": "2027-08-02",
+          "description": "High-risk AI systems subject to existing EU product safety legislation must comply"
+        },
+        {
+          "milestone": "Full enforcement",
+          "date": "2027-08-02",
+          "description": "Full Act enforcement including all remaining provisions"
+        }
+      ],
+      "risk_classification": {
+        "unacceptable_risk": "Prohibited (e.g., social scoring, real-time biometric surveillance)",
+        "high_risk": "Heavy obligations: conformity assessment, data governance, transparency, human oversight, cybersecurity",
+        "limited_risk": "Transparency obligations (e.g., disclose AI-generated content)",
+        "minimal_risk": "No obligations (e.g., spam filters, AI-enabled video games)"
+      },
+      "penalties": {
+        "prohibited_ai_max_fine_euros": 35000000,
+        "prohibited_ai_max_revenue_percent": 7,
+        "high_risk_violations_max_fine_euros": 15000000,
+        "high_risk_violations_max_revenue_percent": 3,
+        "incorrect_info_max_fine_euros": 7500000,
+        "incorrect_info_max_revenue_percent": 1.5,
+        "sme_reduced_penalties": true
+      },
+      "source_url": "https://artificialintelligenceact.eu/",
+      "official_text_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+      "trism_relevance": [
+        "AI governance",
+        "bias detection",
+        "explainability",
+        "human oversight",
+        "technical documentation",
+        "conformity assessment",
+        "GPAI transparency"
+      ],
+      "_fetch_meta": {
+        "last_checked": "2026-03-01T15:44:38Z",
+        "source_reachable": true,
+        "found_terms": [
+          "enforcement",
+          "compliance",
+          "deadline",
+          "august 2026"
+        ]
+      }
+    },
+    {
+      "id": "nist-ai-rmf",
+      "name": "NIST AI RMF",
+      "full_name": "NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "jurisdiction": "United States (Federal)",
+      "status": "Voluntary Framework (Active)",
+      "enacted_date": "2023-01-26",
+      "key_dates": [
+        {
+          "milestone": "AI RMF 1.0 published",
+          "date": "2023-01-26",
+          "description": "NIST releases AI RMF 1.0 with GOVERN, MAP, MEASURE, MANAGE core functions"
+        },
+        {
+          "milestone": "AI RMF Playbook released",
+          "date": "2023-03-01",
+          "description": "Companion Playbook providing implementation guidance"
+        },
+        {
+          "milestone": "GenAI Profile published",
+          "date": "2024-07-01",
+          "description": "NIST AI 600-1: AI RMF generative AI profile addressing GenAI-specific risks"
+        }
+      ],
+      "core_functions": [
+        "GOVERN",
+        "MAP",
+        "MEASURE",
+        "MANAGE"
+      ],
+      "key_risk_categories": [
+        "CBRN Information",
+        "Confabulation (hallucination)",
+        "Data Privacy",
+        "Data Poisoning",
+        "Human-AI Configuration",
+        "Information Integrity",
+        "Information Security",
+        "Intellectual Property",
+        "Obscene/Abusive/Undesirable Content",
+        "Societal Impacts",
+        "Value Chain and Component Integration"
+      ],
+      "penalties": null,
+      "adoption": "Widely adopted by US federal agencies; referenced in US Executive Orders; basis for many state AI laws",
+      "source_url": "https://www.nist.gov/system/files/documents/2023/01/26/AI%20RMF%201.0.pdf",
+      "official_page": "https://www.nist.gov/artificial-intelligence/executive-order-safe-secure-and-trustworthy-artificial-intelligence",
+      "trism_relevance": [
+        "AI governance",
+        "risk management",
+        "bias detection",
+        "explainability",
+        "model monitoring",
+        "AI security"
+      ],
+      "_fetch_meta": {
+        "last_checked": "2026-03-01T15:44:38Z",
+        "source_reachable": true,
+        "found_terms": [
+          "ai rmf",
+          "framework",
+          "update"
+        ]
+      }
+    },
+    {
+      "id": "iso-42001",
+      "name": "ISO/IEC 42001",
+      "full_name": "ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system",
+      "jurisdiction": "International (ISO/IEC)",
+      "status": "Published (Active)",
+      "enacted_date": "2023-12-18",
+      "key_dates": [
+        {
+          "milestone": "ISO/IEC 42001:2023 published",
+          "date": "2023-12-18",
+          "description": "First international standard for AI management systems; defines requirements for responsible AI development, deployment, and use"
+        },
+        {
+          "milestone": "Certifications begin",
+          "date": "2024-06-01",
+          "description": "Certification bodies begin issuing ISO 42001 compliance certificates to organizations"
+        }
+      ],
+      "scope": "AI management system requirements for organizations developing, providing, or using AI products and services",
+      "key_clauses": [
+        "Clause 4: Context of the organization",
+        "Clause 5: Leadership",
+        "Clause 6: Planning (AI risk and impact assessment)",
+        "Clause 7: Support",
+        "Clause 8: Operation",
+        "Clause 9: Performance evaluation",
+        "Clause 10: Improvement"
+      ],
+      "annex_a_controls": "36 controls across AI policy, roles, resources, impact assessment, AI system lifecycle, data management, human oversight",
+      "certification_available": true,
+      "source_url": "https://www.iso.org/standard/81230.html",
+      "trism_relevance": [
+        "AI governance",
+        "risk management",
+        "compliance",
+        "model lifecycle management",
+        "data governance"
+      ],
+      "_fetch_meta": {
+        "last_checked": "2026-03-01T15:44:38Z",
+        "source_reachable": true,
+        "found_terms": [
+          "42001",
+          "2024"
+        ]
+      }
+    },
+    {
+      "id": "us-eo-14110",
+      "name": "US Executive Order 14110",
+      "full_name": "Executive Order 14110 on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence",
+      "jurisdiction": "United States (Federal)",
+      "status": "Signed (Active — some provisions rolled back)",
+      "enacted_date": "2023-10-30",
+      "key_dates": [
+        {
+          "milestone": "EO 14110 signed",
+          "date": "2023-10-30",
+          "description": "Biden Administration signs comprehensive AI executive order"
+        },
+        {
+          "milestone": "NIST AI safety standards directed",
+          "date": "2024-01-01",
+          "description": "NIST directed to develop AI safety and security standards; dual-use foundation model requirements"
+        },
+        {
+          "milestone": "Partial rescission",
+          "date": "2025-01-20",
+          "description": "Trump Administration rescinds EO 14110; some agency guidance remains"
+        }
+      ],
+      "key_provisions": [
+        "Dual-use foundation model safety testing",
+        "NIST AI safety standards development",
+        "Watermarking AI-generated content",
+        "Federal AI risk management",
+        "AI in critical infrastructure security"
+      ],
+      "source_url": "https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/",
+      "trism_relevance": [
+        "AI safety",
+        "AI security",
+        "dual-use model governance",
+        "federal AI compliance"
+      ]
+    },
+    {
+      "id": "us-state-ai-laws",
+      "name": "US State AI Laws",
+      "full_name": "US State-Level AI Legislation (Colorado, Illinois, Texas, New York, California, Connecticut, others)",
+      "jurisdiction": "United States (State Level)",
+      "status": "Multiple — enacted and pending",
+      "key_dates": [
+        {
+          "milestone": "Colorado AI Act signed",
+          "date": "2024-05-17",
+          "description": "Colorado SB 205 signed — first US state comprehensive AI law; high-risk AI governance requirements effective February 1, 2026"
+        },
+        {
+          "milestone": "Colorado AI Act effective",
+          "date": "2026-02-01",
+          "description": "Colorado AI Act enforcement begins for high-risk AI systems"
+        },
+        {
+          "milestone": "Illinois AI Video Interview Act",
+          "date": "2020-01-01",
+          "description": "Illinois AI Video Interview Act (2019) requires employer disclosure and bias testing for AI hiring tools"
+        },
+        {
+          "milestone": "New York City Local Law 144",
+          "date": "2023-07-05",
+          "description": "NYC LL144 requires bias audits for automated employment decision tools; in effect"
+        },
+        {
+          "milestone": "California AI legislation",
+          "date": "2025-01-01",
+          "description": "Multiple California AI bills; Governor vetoed SB 1047 (foundation model safety) in September 2024; AB 2013 requires training data disclosures"
+        }
+      ],
+      "key_jurisdictions": [
+        {
+          "state": "Colorado",
+          "law": "SB 205 (AI Act)",
+          "effective": "2026-02-01",
+          "scope": "High-risk AI systems; developer and deployer obligations"
+        },
+        {
+          "state": "Illinois",
+          "law": "AI Video Interview Act; HB 3773 (amendment)",
+          "effective": "2020-01-01",
+          "scope": "AI in hiring decisions"
+        },
+        {
+          "state": "New York City",
+          "law": "Local Law 144",
+          "effective": "2023-07-05",
+          "scope": "Automated employment decision tools; mandatory bias audits"
+        },
+        {
+          "state": "Texas",
+          "law": "Texas Responsible AI Governance Act (SB 2024)",
+          "effective": "Proposed 2025",
+          "scope": "High-risk AI systems"
+        }
+      ],
+      "source_url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2024-legislation",
+      "trism_relevance": [
+        "AI governance",
+        "bias audits",
+        "hiring AI compliance",
+        "high-risk AI"
+      ]
+    },
+    {
+      "id": "china-ai-regulations",
+      "name": "China AI Regulations",
+      "full_name": "China Generative AI Measures + CAC Algorithm Registration Requirements",
+      "jurisdiction": "China (People's Republic of China)",
+      "status": "Enacted (Active)",
+      "key_dates": [
+        {
+          "milestone": "Algorithm Recommendation Measures effective",
+          "date": "2022-03-01",
+          "description": "CAC rules on algorithmic recommendation services take effect"
+        },
+        {
+          "milestone": "Deep Synthesis Measures effective",
+          "date": "2023-01-10",
+          "description": "CAC rules on deep synthesis (deepfakes) take effect"
+        },
+        {
+          "milestone": "Generative AI Measures effective",
+          "date": "2023-08-15",
+          "description": "CAC Interim Measures for the Management of Generative Artificial Intelligence Services take effect; content safety, transparency, and data requirements"
+        },
+        {
+          "milestone": "AI Foundation Model Registration",
+          "date": "2023-08-15",
+          "description": "GPAI providers must register foundation models with CAC; security assessments for public-facing services"
+        }
+      ],
+      "key_provisions": [
+        "Mandatory registration for public-facing generative AI services",
+        "Content safety and accuracy requirements",
+        "Training data sourcing legality requirements",
+        "Label requirements for AI-generated content",
+        "Security assessments for foundation models"
+      ],
+      "source_url": "https://www.cac.gov.cn/",
+      "trism_relevance": [
+        "AI governance",
+        "content safety",
+        "model registration",
+        "data governance"
+      ]
+    },
+    {
+      "id": "uk-ai-regulation",
+      "name": "UK AI Regulatory Framework",
+      "full_name": "UK Pro-innovation Approach to AI Regulation + AI Safety Institute",
+      "jurisdiction": "United Kingdom",
+      "status": "Framework active; legislation pending",
+      "key_dates": [
+        {
+          "milestone": "UK AI White Paper published",
+          "date": "2023-03-29",
+          "description": "UK government publishes pro-innovation AI regulatory approach; principles-based rather than legislation"
+        },
+        {
+          "milestone": "UK AI Safety Institute established",
+          "date": "2023-11-01",
+          "description": "UK AI Safety Institute (AISI) launched; frontier AI safety evaluations"
+        },
+        {
+          "milestone": "Frontier AI Safety Commitments",
+          "date": "2023-11-01",
+          "description": "Bletchley AI Safety Summit; 16 AI companies sign voluntary safety commitments"
+        },
+        {
+          "milestone": "UK AI Action Plan",
+          "date": "2025-01-13",
+          "description": "UK releases AI Opportunities Action Plan; regulatory clarity for AI deployment"
+        }
+      ],
+      "key_provisions": [
+        "Sector-specific regulator approach (FCA, ICO, CMA each apply principles to their domain)",
+        "Five cross-sector AI principles: safety, security and robustness; transparency and explainability; fairness; accountability and governance; contestability and redress",
+        "Financial services AI: SS1/23 Dear CEO letter (model risk management)",
+        "ICO AI and data protection guidance"
+      ],
+      "penalties": {
+        "notes": "Sector regulators enforce using existing powers (FCA, ICO, CMA etc.); ICO can fine up to £17.5M or 4% of global annual turnover"
+      },
+      "source_url": "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach",
+      "trism_relevance": [
+        "AI governance",
+        "fairness",
+        "explainability",
+        "financial services AI compliance"
+      ]
+    },
+    {
+      "id": "sr-11-7",
+      "name": "SR 11-7",
+      "full_name": "Federal Reserve / OCC SR Letter 11-7: Guidance on Model Risk Management",
+      "jurisdiction": "United States (Banking Regulators)",
+      "status": "Active Guidance",
+      "enacted_date": "2011-04-04",
+      "key_dates": [
+        {
+          "milestone": "SR 11-7 issued",
+          "date": "2011-04-04",
+          "description": "Fed/OCC guidance on model risk management; establishes MRM framework for banks"
+        },
+        {
+          "milestone": "Application to AI/ML models clarified",
+          "date": "2021-01-01",
+          "description": "Regulators clarify SR 11-7 applies to AI/ML models used in credit decisions, AML, stress testing"
+        }
+      ],
+      "key_requirements": [
+        "Model development documentation",
+        "Independent model validation",
+        "Ongoing monitoring",
+        "Approval and review workflows",
+        "Inventory of all models",
+        "Governance policies and procedures"
+      ],
+      "penalties": {
+        "notes": "Banking regulators can impose MRAs (Matters Requiring Attention), cease-and-desist orders, civil money penalties"
+      },
+      "source_url": "https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm",
+      "trism_relevance": [
+        "model governance",
+        "model risk management",
+        "financial services AI compliance",
+        "model validation"
+      ]
+    },
+    {
+      "id": "gdpr-ai",
+      "name": "GDPR (AI Implications)",
+      "full_name": "General Data Protection Regulation — AI and Automated Decision-Making Provisions",
+      "jurisdiction": "European Union",
+      "status": "Enacted (Active since 2018)",
+      "enacted_date": "2018-05-25",
+      "key_dates": [
+        {
+          "milestone": "GDPR enforcement begins",
+          "date": "2018-05-25",
+          "description": "GDPR becomes enforceable; Article 22 (automated decision-making) applies to AI"
+        },
+        {
+          "milestone": "EDPB AI Guidelines",
+          "date": "2024-05-01",
+          "description": "EDPB publishes Guidelines on AI and data protection"
+        }
+      ],
+      "ai_specific_provisions": [
+        "Article 22: Right not to be subject to solely automated decisions with significant effect; requires human oversight",
+        "Article 13-15: Transparency and explainability requirements for automated processing",
+        "Article 35: DPIA (Data Protection Impact Assessment) required for high-risk AI processing",
+        "Recital 71: Explanations for automated decisions"
+      ],
+      "penalties": {
+        "max_fine_euros": 20000000,
+        "max_revenue_percent": 4,
+        "notes": "Higher tier for Article 22 violations"
+      },
+      "source_url": "https://gdpr-info.eu/art-22-gdpr/",
+      "trism_relevance": [
+        "data privacy",
+        "AI explainability",
+        "automated decision-making governance",
+        "bias detection"
+      ]
+    },
+    {
+      "id": "hipaa-ai",
+      "name": "HIPAA (AI in Healthcare)",
+      "full_name": "Health Insurance Portability and Accountability Act — AI Applications in Healthcare",
+      "jurisdiction": "United States (Healthcare)",
+      "status": "Active Guidance",
+      "enacted_date": "1996-08-21",
+      "key_dates": [
+        {
+          "milestone": "HHS AI Strategy",
+          "date": "2023-11-01",
+          "description": "HHS publishes AI strategy for health and human services"
+        },
+        {
+          "milestone": "FDA AI/ML Software as Medical Device guidance",
+          "date": "2024-03-01",
+          "description": "FDA updates guidance on AI/ML-based Software as a Medical Device (SaMD)"
+        }
+      ],
+      "key_requirements": [
+        "PHI protection in AI training data",
+        "Business Associate Agreements for AI vendors processing PHI",
+        "Risk analysis for AI systems handling PHI",
+        "FDA SaMD oversight for clinical AI tools"
+      ],
+      "penalties": {
+        "max_annual_civil_fine_usd": 1919173,
+        "criminal_penalties": true
+      },
+      "source_url": "https://www.hhs.gov/hipaa/index.html",
+      "trism_relevance": [
+        "data privacy",
+        "healthcare AI compliance",
+        "model governance",
+        "clinical AI safety"
+      ]
+    },
+    {
+      "id": "canada-aida",
+      "name": "Canada AIDA",
+      "full_name": "Canada Artificial Intelligence and Data Act (Bill C-27)",
+      "jurisdiction": "Canada",
+      "status": "Proposed (Pending Parliament)",
+      "key_dates": [
+        {
+          "milestone": "Bill C-27 introduced",
+          "date": "2022-06-16",
+          "description": "Canada introduces Artificial Intelligence and Data Act as part of Bill C-27 (alongside Consumer Privacy Protection Act)"
+        },
+        {
+          "milestone": "Second reading",
+          "date": "2023-04-01",
+          "description": "AIDA progresses to second reading in Parliament; significant revisions proposed"
+        },
+        {
+          "milestone": "Status uncertain",
+          "date": "2025-01-01",
+          "description": "AIDA status uncertain following Canadian federal political changes; legislation may be reintroduced"
+        }
+      ],
+      "key_provisions": [
+        "High-impact AI system obligations: impact assessments, risk mitigation, monitoring, anomaly reporting",
+        "Prohibition on AI causing serious harm or biased outputs",
+        "AI and Data Commissioner",
+        "Penalties up to 3% of global revenue for non-compliance"
+      ],
+      "penalties": {
+        "max_revenue_percent": 3,
+        "notes": "Penalties for non-compliance with compliance orders; criminal penalties for reckless harm"
+      },
+      "source_url": "https://ised-isde.canada.ca/site/innovation-better-canada/en/artificial-intelligence-and-data-act",
+      "trism_relevance": [
+        "AI governance",
+        "high-impact AI compliance",
+        "bias prevention"
+      ]
+    }
   ],
   "frameworks_voluntary": [
-    {"id": "oecd-ai-principles","name": "OECD AI Principles","organization": "OECD","published_date": "2019-05-22","description": "First intergovernmental standard on AI; five principles: inclusive growth, human-centred values, transparency, robustness, accountability","status": "Voluntary international principles","source_url": "https://www.oecd.org/en/topics/artificial-intelligence/ai-principles.html","adopted_by": "42+ countries"},
-    {"id": "ieee-ethically-aligned-design","name": "IEEE Ethically Aligned Design","organization": "IEEE","published_date": "2019-01-01","description": "Framework for ethical AI design covering autonomous and intelligent systems","status": "Voluntary framework","source_url": "https://standards.ieee.org/industry-connections/ec/autonomous-systems/"},
-    {"id": "g7-hiroshima-ai-process","name": "G7 Hiroshima AI Process","organization": "G7","published_date": "2023-10-30","description": "Guiding principles and code of conduct for AI developers; voluntary international alignment","status": "Voluntary","source_url": "https://www.g7italy.it/en/","signatories": ["United States","United Kingdom","European Union","Japan","Canada","France","Germany","Italy"]}
+    {
+      "id": "oecd-ai-principles",
+      "name": "OECD AI Principles",
+      "organization": "OECD",
+      "published_date": "2019-05-22",
+      "description": "First intergovernmental standard on AI; five principles: inclusive growth, human-centred values, transparency, robustness, accountability",
+      "status": "Voluntary international principles",
+      "source_url": "https://www.oecd.org/en/topics/artificial-intelligence/ai-principles.html",
+      "adopted_by": "42+ countries"
+    },
+    {
+      "id": "ieee-ethically-aligned-design",
+      "name": "IEEE Ethically Aligned Design",
+      "organization": "IEEE",
+      "published_date": "2019-01-01",
+      "description": "Framework for ethical AI design covering autonomous and intelligent systems",
+      "status": "Voluntary framework",
+      "source_url": "https://standards.ieee.org/industry-connections/ec/autonomous-systems/"
+    },
+    {
+      "id": "g7-hiroshima-ai-process",
+      "name": "G7 Hiroshima AI Process",
+      "organization": "G7",
+      "published_date": "2023-10-30",
+      "description": "Guiding principles and code of conduct for AI developers; voluntary international alignment",
+      "status": "Voluntary",
+      "source_url": "https://www.g7italy.it/en/",
+      "signatories": [
+        "United States",
+        "United Kingdom",
+        "European Union",
+        "Japan",
+        "Canada",
+        "France",
+        "Germany",
+        "Italy"
+      ]
+    }
   ]
 }
