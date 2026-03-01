@@ -1,0 +1,29 @@
+# requirements.txt — AI TRiSM Market Index
+#
+# This project uses Python standard library ONLY.
+# No external package installations are required for scripts/fetch_vendors.py
+# or scripts/validate_data.py.
+#
+# Standard library modules used:
+#   - json           — JSON parsing and generation
+#   - logging        — Structured logging
+#   - os             — Environment variable access
+#   - re             — Regular expressions for pattern matching
+#   - shutil         — File copy operations (history snapshots)
+#   - sys            — Exit codes and stdout
+#   - time           — Rate limiting delays between HTTP requests
+#   - urllib.request — HTTP GET requests (no third-party HTTP client needed)
+#   - urllib.error   — HTTP error handling
+#   - datetime       — ISO 8601 timestamp generation
+#   - pathlib        — Cross-platform file paths
+#   - argparse       — CLI argument parsing (validate_data.py)
+#   - ast            — Abstract syntax tree (stdlib check in CI)
+#
+# ─────────────────────────────────────────────────────
+# DEVELOPMENT DEPENDENCIES (optional, not required to run scripts)
+# Install with: pip install -r requirements-dev.txt
+# ─────────────────────────────────────────────────────
+# See pyproject.toml for full dev tooling configuration.
+
+# No runtime dependencies.
+# Python >= 3.9 required.

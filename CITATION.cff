@@ -1,0 +1,133 @@
+cff-version: 1.2.0
+message: >-
+  If you use this dataset in your research or work, please cite it using
+  the metadata below.
+
+title: AI TRiSM Market Index
+abstract: >-
+  A comprehensive, machine-readable open dataset covering the global market
+  for AI Trust, Risk, and Security Management (AI TRiSM). The dataset indexes
+  66+ vendors across 10 categories including AI governance platforms, runtime
+  LLM security, explainability tools, red teaming, model monitoring, data
+  privacy, content safety, and regulatory compliance. Includes market sizing
+  data from 8 analyst firms, funding and M&A activity for 2022–2026, and
+  a structured regulatory tracker for EU AI Act, NIST AI RMF, ISO 42001,
+  GDPR, SR 11-7, and other global AI regulations. Updated automatically via
+  GitHub Actions.
+
+authors:
+  - name: Alpha One Index
+    alias: alpha-one-index
+    website: "https://github.com/alpha-one-index"
+
+contact:
+  - name: Alpha One Index
+    email: alpha.one.hq@proton.me
+
+repository-code: "https://github.com/alpha-one-index/ai-trism-index"
+url: "https://alpha-one-index.github.io/ai-trism-index/"
+repository-artifact: "https://raw.githubusercontent.com/alpha-one-index/ai-trism-index/main/data/vendors.json"
+
+version: 1.0.0
+date-released: "2026-03-01"
+
+license: CC-BY-4.0
+
+type: dataset
+
+keywords:
+  - AI TRiSM
+  - AI Trust Risk Security Management
+  - AI governance
+  - responsible AI
+  - AI security
+  - machine learning security
+  - LLM security
+  - prompt injection
+  - AI explainability
+  - AI fairness
+  - AI compliance
+  - EU AI Act
+  - NIST AI RMF
+  - ISO 42001
+  - model monitoring
+  - AI observability
+  - data privacy
+  - DSPM
+  - AI red teaming
+  - generative AI security
+  - agentic AI security
+  - Gartner
+  - market intelligence
+  - vendor index
+
+references:
+  - type: report
+    title: "Market Guide for AI Trust, Risk and Security Management (AI TRiSM)"
+    authors:
+      - name: Gartner Research
+    year: 2025
+    url: "https://www.gartner.com/en/documents/5636393"
+    notes: "2025 Gartner Market Guide — Representative Vendors include Lasso Security, Zenity, Proofpoint, Concentric AI, LatticeFlow AI"
+
+  - type: report
+    title: "AI Trust, Risk and Security Management Market — Global Forecast to 2035"
+    authors:
+      - name: Precedence Research
+    year: 2025
+    url: "https://www.precedenceresearch.com/ai-trust-risk-and-security-management-market"
+    notes: "Market size $2.95B (2025) growing to $21.06B (2035) at 21.72% CAGR"
+
+  - type: report
+    title: "AI Governance Market — Global Forecast to 2029"
+    authors:
+      - name: MarketsandMarkets
+    year: 2024
+    url: "https://www.marketsandmarkets.com/Market-Reports/ai-governance-market-176187291.html"
+    notes: "AI Governance sub-market $890M (2024) growing to $5.78B (2029) at 45.3% CAGR"
+
+  - type: report
+    title: "AI Trust, Risk and Security Management Trends, Analysis and Growth Forecasts 2025-2030"
+    authors:
+      - name: Research and Markets
+    year: 2025
+    url: "https://www.globenewswire.com/news-release/2025/05/21/3085951/28124/en/AI-Trust-Risk-and-Security-Management-Trends-Analysis-and-Growth-Forecasts-2025-2030-Market-to-Reach-7-44-Billion-Generative-AI-Foundation-Models-Spur-Demand-for-Advanced-AI-TRiSM-.html"
+    notes: "Market $2.34B (2024) growing to $7.44B (2030) at 21.6% CAGR"
+
+  - type: standard
+    title: "Artificial Intelligence Act (EU AI Act)"
+    institution: "European Parliament and Council of the European Union"
+    year: 2024
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    notes: "Regulation (EU) 2024/1689 — entered into force 2024-08-01"
+
+  - type: standard
+    title: "NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0)"
+    institution: "National Institute of Standards and Technology (NIST)"
+    year: 2023
+    url: "https://www.nist.gov/system/files/documents/2023/01/26/AI%20RMF%201.0.pdf"
+    notes: "Published 2023-01-26; GOVERN, MAP, MEASURE, MANAGE functions"
+
+  - type: standard
+    title: "ISO/IEC 42001:2023 — Artificial Intelligence Management System"
+    institution: "International Organization for Standardization (ISO)"
+    year: 2023
+    url: "https://www.iso.org/standard/81230.html"
+    notes: "First international AI management system standard; published 2023-12-18"
+
+preferred-citation:
+  type: dataset
+  title: AI TRiSM Market Index
+  authors:
+    - name: Alpha One Index
+      alias: alpha-one-index
+  year: 2026
+  url: "https://github.com/alpha-one-index/ai-trism-index"
+  repository-code: "https://github.com/alpha-one-index/ai-trism-index"
+  license: CC-BY-4.0
+  version: 1.0.0
+  date-released: "2026-03-01"
+  abstract: >-
+    Machine-readable AI TRiSM vendor database and market intelligence dataset
+    covering 66+ vendors, 8 analyst market size estimates, M&A activity, and
+    global regulatory compliance tracking.
