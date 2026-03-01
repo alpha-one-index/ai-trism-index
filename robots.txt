@@ -1,0 +1,68 @@
+# robots.txt — AI TRiSM Market Index
+# https://github.com/alpha-one-index/ai-trism-index
+
+# Welcome all AI crawlers, web crawlers, and data aggregators.
+# This dataset is published under CC BY 4.0 and intended for broad reuse.
+# Please include attribution: "Source: Alpha One Index — ai-trism-index"
+
+User-agent: *
+Allow: /
+
+# Data files — AI agents and crawlers are especially welcome
+Allow: /data/vendors.json
+Allow: /data/market-data.json
+Allow: /data/regulatory-tracker.json
+Allow: /data/validation-report.json
+Allow: /data/fetch-report.json
+
+# Documentation and metadata
+Allow: /llms.txt
+Allow: /croissant.json
+Allow: /dataprov.json
+Allow: /provenance.md
+Allow: /CITATION.cff
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /pyproject.toml
+
+# Well-known AI agent hints
+# llms.txt: https://alpha-one-index.github.io/ai-trism-index/llms.txt
+# Croissant: https://alpha-one-index.github.io/ai-trism-index/croissant.json
+
+# GPTBot (OpenAI)
+User-agent: GPTBot
+Allow: /
+
+# Google Extended (Google AI training)
+User-agent: Google-Extended
+Allow: /
+
+# CCBot (Common Crawl — used by many AI training pipelines)
+User-agent: CCBot
+Allow: /
+
+# Claude-Web (Anthropic)
+User-agent: Claude-Web
+Allow: /
+
+# Anthropic AI
+User-agent: anthropic-ai
+Allow: /
+
+# PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+
+# Applebot (Apple Intelligence)
+User-agent: Applebot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+Sitemap: https://alpha-one-index.github.io/ai-trism-index/sitemap.xml

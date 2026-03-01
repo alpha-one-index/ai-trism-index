@@ -1,0 +1,250 @@
+name: Validate AI TRiSM Data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+      - '.github/workflows/validate.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+  workflow_dispatch:
+    inputs:
+      check_mode:
+        description: 'Which checks to run'
+        required: false
+        type: choice
+        options: [all, schema, urls, anomalies]
+        default: all
+      max_url_checks:
+        description: 'Max number of URLs to verify (0 = skip URL checks)'
+        required: false
+        type: number
+        default: 30
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-data:
+    name: Validate Data Files
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Verify data files exist
+        run: |
+          echo "Checking required data files..."
+          required_files=(
+            "data/vendors.json"
+            "data/market-data.json"
+            "data/regulatory-tracker.json"
+          )
+          missing=0
+          for f in "${required_files[@]}"; do
+            if [ -f "$f" ]; then
+              echo "  ✓ $f ($(wc -c < "$f") bytes)"
+            else
+              echo "  ✗ MISSING: $f"
+              missing=$((missing + 1))
+            fi
+          done
+          if [ "$missing" -gt "0" ]; then
+            echo "ERROR: $missing required file(s) missing"
+            exit 1
+          fi
+
+      - name: Validate JSON syntax
+        run: |
+          echo "Checking JSON syntax..."
+          for f in data/vendors.json data/market-data.json data/regulatory-tracker.json; do
+            if python3 -c "import json; json.load(open('$f'))" 2>&1; then
+              echo "  ✓ Valid JSON: $f"
+            else
+              echo "  ✗ Invalid JSON: $f"
+              exit 1
+            fi
+          done
+
+      - name: Run schema validation
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          CHECK_MODE: ${{ inputs.check_mode || 'schema' }}
+          MAX_URL_CHECKS: ${{ inputs.max_url_checks || '30' }}
+          REQUEST_TIMEOUT: '10'
+        run: |
+          python scripts/validate_data.py \
+            --check $CHECK_MODE \
+            --ci \
+            --max-url-checks $MAX_URL_CHECKS \
+            --json > validation-output.json
+          echo "Exit code: $?"
+
+      - name: Parse and display validation results
+        if: always()
+        run: |
+          if [ -f validation-output.json ]; then
+            python3 -c "
+          import json, sys
+          with open('validation-output.json') as f:
+              r = json.load(f)
+          s = r.get('summary', {})
+          status = r.get('overall_status', 'UNKNOWN')
+          print(f'Overall Status: {status}')
+          print(f'Errors:   {s.get(\"errors\", 0)}')
+          print(f'Warnings: {s.get(\"warnings\", 0)}')
+          print(f'URLs checked: {s.get(\"urls_checked\", 0)} ({s.get(\"urls_live\",0)} live, {s.get(\"urls_dead\",0)} dead)')
+          if r.get('errors'):
+              print('')
+              print('ERRORS:')
+              for e in r['errors'][:10]:
+                  print(f'  [{e[\"category\"]}] {e[\"message\"]} ({e.get(\"location\",\"\")})')
+          "
+          fi
+
+      - name: Check vendor count
+        run: |
+          python3 -c "
+          import json
+          with open('data/vendors.json') as f:
+              d = json.load(f)
+          cats = d.get('categories', {})
+          total = sum(len(c.get('vendors',[])) for c in cats.values())
+          cat_count = len(cats)
+          print(f'Categories: {cat_count}')
+          print(f'Total vendors: {total}')
+          if total < 50:
+              print(f'WARNING: Low vendor count ({total}), expected 60+')
+              sys.exit(1)
+          elif total < 60:
+              print(f'NOTE: Vendor count {total} is slightly below target 66')
+          else:
+              print(f'OK: Vendor count {total} meets expectations')
+          " && echo "Vendor count check passed"
+
+      - name: Check regulatory tracker completeness
+        run: |
+          python3 -c "
+          import json
+          with open('data/regulatory-tracker.json') as f:
+              d = json.load(f)
+          regs = d.get('regulations', [])
+          print(f'Regulations tracked: {len(regs)}')
+          required = {'eu-ai-act', 'nist-ai-rmf', 'iso-42001', 'gdpr-ai', 'sr-11-7'}
+          found_ids = {r.get('id') for r in regs}
+          missing = required - found_ids
+          if missing:
+              print(f'MISSING required regulations: {missing}')
+              import sys; sys.exit(1)
+          else:
+              print('All required regulations present')
+          "
+
+      - name: Post PR comment with validation summary
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let body = '## AI TRiSM Data Validation\n\n';
+            try {
+              const report = JSON.parse(fs.readFileSync('validation-output.json', 'utf8'));
+              const s = report.summary || {};
+              const status = report.overall_status || 'UNKNOWN';
+              const icon = status === 'PASS' ? 'PASS' : 'FAIL';
+              body += `**Status:** ${icon} ${status}\n\n`;
+              body += `| Metric | Value |\n|--------|-------|\n`;
+              body += `| Errors | ${s.errors || 0} |\n`;
+              body += `| Warnings | ${s.warnings || 0} |\n`;
+              body += `| URLs checked | ${s.urls_checked || 0} |\n`;
+              body += `| URLs live | ${s.urls_live || 0} |\n`;
+              if ((report.errors || []).length > 0) {
+                body += '\n**Errors:**\n';
+                for (const e of (report.errors || []).slice(0, 5))
+                  body += `- \`[${e.category}]\` ${e.message}\n`;
+              }
+            } catch (e) { body += `_Could not parse validation report: ${e.message}_`; }
+            github.rest.issues.createComment({issue_number: context.issue.number, owner: context.repo.owner, repo: context.repo.repo, body});
+
+      - name: Upload validation report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validation-report-${{ github.run_id }}
+          path: |
+            validation-output.json
+            data/validation-report.json
+          retention-days: 90
+
+  lint-python:
+    name: Lint Python Scripts
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check scripts for syntax errors
+        run: |
+          echo "Checking Python script syntax..."
+          for f in scripts/*.py; do
+            if python3 -m py_compile "$f" 2>&1; then
+              echo "  ✓ $f"
+            else
+              echo "  ✗ Syntax error in $f"
+              exit 1
+            fi
+          done
+
+      - name: Verify stdlib-only imports
+        run: |
+          python3 -c "
+          import ast, sys, pathlib
+          stdlib_modules = {
+              'json', 'logging', 'os', 're', 'shutil', 'sys', 'time',
+              'urllib', 'datetime', 'pathlib', 'argparse', 'typing',
+              'collections', 'functools', 'itertools', 'string', 'io',
+              'hashlib', 'hmac', 'base64', 'math', 'random', 'copy',
+          }
+          scripts = list(pathlib.Path('scripts').glob('*.py'))
+          all_ok = True
+          for script in scripts:
+              tree = ast.parse(script.read_text())
+              imports = []
+              for node in ast.walk(tree):
+                  if isinstance(node, ast.Import):
+                      imports.extend(a.name.split('.')[0] for a in node.names)
+                  elif isinstance(node, ast.ImportFrom):
+                      if node.module:
+                          imports.append(node.module.split('.')[0])
+              external = [m for m in imports if m not in stdlib_modules and not m.startswith('_')]
+              if external:
+                  print(f'WARNING: {script.name} may use non-stdlib: {external}')
+              else:
+                  print(f'OK: {script.name} uses stdlib only')
+          "

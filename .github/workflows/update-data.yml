@@ -1,0 +1,135 @@
+name: Update AI TRiSM Market Data
+
+on:
+  schedule:
+    # Run every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      force_archive:
+        description: 'Force create a history snapshot even if no changes'
+        required: false
+        type: boolean
+        default: false
+      log_level:
+        description: 'Log level (DEBUG, INFO, WARNING)'
+        required: false
+        type: choice
+        options: [INFO, DEBUG, WARNING]
+        default: INFO
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    name: Fetch and Update AI TRiSM Market Data
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Verify Python stdlib-only (no pip installs needed)
+        run: |
+          python --version
+          echo "Using Python stdlib only — no additional dependencies required"
+
+      - name: Run fetch_vendors.py
+        env:
+          LOG_LEVEL: ${{ inputs.log_level || 'INFO' }}
+          REQUEST_TIMEOUT: '15'
+          MAX_RETRIES: '3'
+          RETRY_DELAY: '2.0'
+        run: |
+          python scripts/fetch_vendors.py
+        continue-on-error: false
+
+      - name: Run validation after fetch
+        run: |
+          python scripts/validate_data.py --check schema --json > data/validation-report.json || true
+          echo "Validation complete"
+
+      - name: Show fetch report summary
+        run: |
+          if [ -f data/fetch-report.json ]; then
+            echo "=== Fetch Report Summary ==="
+            python3 -c "
+          import json
+          with open('data/fetch-report.json') as f:
+              r = json.load(f)
+          s = r.get('summary', {})
+          print(f\"Vendors checked:      {s.get('vendors_checked', 0)}\")
+          print(f\"Websites live:        {s.get('websites_live', 0)}\")
+          print(f\"Websites unreachable: {s.get('websites_unreachable', 0)}\")
+          print(f\"Acquisition signals:  {s.get('acquisition_signals_detected', 0)}\")
+          "
+          fi
+
+      - name: Commit and push data changes
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes to data files"
+          else
+            TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
+            VENDOR_COUNT=$(python3 -c "
+          import json
+          with open('data/vendors.json') as f:
+              d = json.load(f)
+          count = sum(len(c.get('vendors',[])) for c in d.get('categories',{}).values())
+          print(count)
+          " 2>/dev/null || echo '?')
+            git commit -m "chore: auto-update AI TRiSM market data [${TIMESTAMP}]
+
+          - Vendor websites checked
+          - Total vendors: ${VENDOR_COUNT}
+          - Regulatory sources verified
+          - History snapshot archived
+
+          [skip ci]"
+            git push
+            echo "Changes pushed successfully"
+          fi
+
+      - name: Create issue on acquisition signal detection
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f data/fetch-report.json ]; then
+            SIGNALS=$(python3 -c "
+          import json
+          with open('data/fetch-report.json') as f:
+              r = json.load(f)
+          signals = r.get('summary', {}).get('acquisition_signals_detected', 0)
+          print(signals)
+          " 2>/dev/null || echo '0')
+            if [ "$SIGNALS" -gt "0" ]; then
+              echo "⚠ Acquisition signals detected: $SIGNALS vendor(s) show acquisition language on their website"
+              echo "Review data/fetch-report.json for details"
+            fi
+          fi
+
+      - name: Upload fetch report artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fetch-report-${{ github.run_id }}
+          path: data/fetch-report.json
+          retention-days: 30

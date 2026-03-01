@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@id": "https://github.com/alpha-one-index/ai-trism-index",
+  "@type": ["Dataset", "prov:Entity"],
+  "name": "AI TRiSM Market Index",
+  "description": "Machine-readable AI TRiSM vendor index, market data, and regulatory tracker",
+  "url": "https://alpha-one-index.github.io/ai-trism-index/",
+  "version": "1.0.0",
+  "dateCreated": "2026-03-01",
+  "dateModified": "2026-03-01",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@id": "https://github.com/alpha-one-index",
+    "@type": ["Organization", "prov:Agent"],
+    "name": "Alpha One Index",
+    "email": "alpha.one.hq@proton.me"
+  },
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "@id": "_:research-activity",
+    "prov:startedAtTime": "2026-01-01T00:00:00Z",
+    "prov:endedAtTime": "2026-03-01T13:00:00Z",
+    "prov:wasAssociatedWith": {"@id": "https://github.com/alpha-one-index", "@type": "prov:Agent"},
+    "prov:used": [
+      {"@id": "_:src-gartner"}, {"@id": "_:src-precedence"}, {"@id": "_:src-marketsandmarkets"},
+      {"@id": "_:src-research-and-markets"}, {"@id": "_:src-polaris"}, {"@id": "_:src-allied"},
+      {"@id": "_:src-techcrunch"}, {"@id": "_:src-businesswire"}, {"@id": "_:src-prnewswire"},
+      {"@id": "_:src-securityweek"}, {"@id": "_:src-venturebeat"}, {"@id": "_:src-vendor-websites"},
+      {"@id": "_:src-eu-ai-act"}, {"@id": "_:src-nist-rmf"}, {"@id": "_:src-iso-42001"}
+    ]
+  },
+  "prov:wasDerivedFrom": [
+    {"@id": "_:src-gartner", "@type": ["prov:Entity", "CreativeWork"], "name": "Gartner Market Guide for AI TRiSM 2025", "publisher": {"name": "Gartner"}, "url": "https://www.gartner.com/en/documents/5636393", "datePublished": "2025-02-01", "dct:rights": "Proprietary — cited via vendor press releases and blog posts"},
+    {"@id": "_:src-gartner-cool-vendors", "@type": ["prov:Entity", "CreativeWork"], "name": "Gartner Cool Vendors in Agentic AI TRiSM 2025", "publisher": {"name": "Gartner"}, "url": "https://www.linkedin.com/posts/avivahlitan_ai-guardian-agents-activity-7369109299882635265-xqMi", "datePublished": "2025-09-01"},
+    {"@id": "_:src-precedence", "@type": ["prov:Entity", "Report"], "name": "AI TRiSM Market Global Forecast to 2035", "publisher": {"name": "Precedence Research"}, "url": "https://www.precedenceresearch.com/ai-trust-risk-and-security-management-market", "datePublished": "2025-12-01"},
+    {"@id": "_:src-marketsandmarkets", "@type": ["prov:Entity", "Report"], "name": "AI Governance Market Global Forecast to 2029", "publisher": {"name": "MarketsandMarkets"}, "url": "https://www.marketsandmarkets.com/Market-Reports/ai-governance-market-176187291.html"},
+    {"@id": "_:src-research-and-markets", "@type": ["prov:Entity", "Report"], "name": "AI TRiSM Market Forecast 2025-2030", "publisher": {"name": "Research and Markets"}, "url": "https://www.globenewswire.com/news-release/2025/05/21/3085951/28124/en/AI-Trust-Risk-and-Security-Management-Trends-Analysis-and-Growth-Forecasts-2025-2030-Market-to-Reach-7-44-Billion-Generative-AI-Foundation-Models-Spur-Demand-for-Advanced-AI-TRiSM-.html", "datePublished": "2025-05-21"},
+    {"@id": "_:src-polaris", "@type": ["prov:Entity", "Report"], "name": "AI TRiSM Market — Polaris", "publisher": {"name": "Polaris Market Research"}, "url": "https://www.polarismarketresearch.com/industry-analysis/ai-trust-risk-and-security-management-market"},
+    {"@id": "_:src-allied", "@type": ["prov:Entity", "Report"], "name": "AI TRiSM Market — Allied", "publisher": {"name": "Allied Market Research"}, "url": "https://www.alliedmarketresearch.com/press-release/ai-trust-risk-and-security-management-ai-trism-market.html"},
+    {"@id": "_:src-techcrunch", "@type": ["prov:Entity", "NewsMediaOrganization"], "name": "TechCrunch", "url": "https://techcrunch.com"},
+    {"@id": "_:src-businesswire", "@type": ["prov:Entity", "NewsMediaOrganization"], "name": "Business Wire", "url": "https://www.businesswire.com"},
+    {"@id": "_:src-prnewswire", "@type": ["prov:Entity", "NewsMediaOrganization"], "name": "PR Newswire", "url": "https://www.prnewswire.com"},
+    {"@id": "_:src-securityweek", "@type": ["prov:Entity", "NewsMediaOrganization"], "name": "SecurityWeek", "url": "https://www.securityweek.com"},
+    {"@id": "_:src-venturebeat", "@type": ["prov:Entity", "NewsMediaOrganization"], "name": "VentureBeat", "url": "https://venturebeat.com"},
+    {"@id": "_:src-vendor-websites", "@type": "prov:Entity", "name": "Individual Vendor Websites and Press Releases"},
+    {"@id": "_:src-eu-ai-act", "@type": ["prov:Entity", "Legislation"], "name": "Regulation (EU) 2024/1689 — EU AI Act", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689", "datePublished": "2024-08-01"},
+    {"@id": "_:src-nist-rmf", "@type": ["prov:Entity", "TechArticle"], "name": "NIST AI Risk Management Framework (AI RMF 1.0)", "url": "https://www.nist.gov/system/files/documents/2023/01/26/AI%20RMF%201.0.pdf", "datePublished": "2023-01-26"},
+    {"@id": "_:src-iso-42001", "@type": ["prov:Entity", "TechArticle"], "name": "ISO/IEC 42001:2023", "url": "https://www.iso.org/standard/81230.html", "datePublished": "2023-12-18"}
+  ],
+  "known_limitations": [
+    "Private company funding totals may be incomplete or estimated from press reports",
+    "Market size estimates vary significantly between analyst firms due to different scope definitions",
+    "Acquired vendor websites may redirect to acquirer pages",
+    "Coverage may be biased toward English-language sources and US/European vendors",
+    "This dataset should not be used as financial investment advice"
+  ]
+}

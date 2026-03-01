@@ -1,0 +1,115 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "dct": "http://purl.org/dc/terms/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "sc": "https://schema.org/"
+  },
+  "@type": "sc:Dataset",
+  "@id": "https://github.com/alpha-one-index/ai-trism-index",
+  "name": "AI TRiSM Market Index",
+  "description": "Comprehensive machine-readable dataset covering 66+ vendors in the AI Trust, Risk, and Security Management (AI TRiSM) market. Includes vendor profiles with funding, capabilities, and Gartner recognition; market size estimates from 8 analyst firms; segment analysis; M&A activity (2024-2025); and regulatory compliance tracking for EU AI Act, NIST AI RMF, ISO 42001, GDPR, SR 11-7, and other global AI regulations. Updated automatically via GitHub Actions.",
+  "url": "https://alpha-one-index.github.io/ai-trism-index/",
+  "version": "1.0.0",
+  "datePublished": "2026-03-01",
+  "dateModified": "2026-03-01",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "sc:Organization",
+    "name": "Alpha One Index",
+    "url": "https://github.com/alpha-one-index",
+    "email": "alpha.one.hq@proton.me"
+  },
+  "publisher": {
+    "@type": "sc:Organization",
+    "name": "Alpha One Index",
+    "url": "https://github.com/alpha-one-index"
+  },
+  "keywords": [
+    "AI TRiSM", "AI Trust Risk Security Management", "AI governance", "responsible AI",
+    "AI security", "LLM security", "prompt injection", "AI explainability", "AI fairness",
+    "AI compliance", "EU AI Act", "NIST AI RMF", "ISO 42001", "model monitoring",
+    "AI observability", "data privacy", "DSPM", "AI red teaming", "generative AI security",
+    "agentic AI", "market intelligence"
+  ],
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "rai:dataCollection": "Vendor data collected from official press releases, company websites, Gartner research citations from vendor blogs, analyst firm reports, TechCrunch, Business Wire, PR Newswire, CyberScoop, SecurityWeek, and VentureBeat. Market sizing data from named analyst firms with source URLs. Regulatory data from official government and standards body publications.",
+  "rai:dataCollectionTimeframe": "January 2013 - March 2026",
+  "rai:dataBiases": "Vendor coverage may be biased toward US and European vendors due to English-language source availability. Private company funding data may be incomplete. Market size estimates vary significantly between analyst firms due to different scope definitions.",
+  "rai:dataLimitations": "1) Funding totals for private companies may be incomplete or estimated from press reports. 2) Acquired vendor websites may redirect to acquirer pages. 3) Market size estimates from different analyst firms are not directly comparable due to scope differences. 4) This dataset should not be used as financial investment advice.",
+  "rai:personalSensitiveInformation": "No personal data. Dataset covers organizations, products, and market statistics only.",
+  "cr:conformsTo": "http://mlcommons.org/croissant/1.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "vendors-json",
+      "name": "vendors.json",
+      "description": "Machine-readable database of 66+ AI TRiSM vendors across 10 categories with funding, capabilities, Gartner recognition, and acquisition status",
+      "contentUrl": "https://raw.githubusercontent.com/alpha-one-index/ai-trism-index/main/data/vendors.json",
+      "encodingFormat": "application/json",
+      "sha256": "auto-computed-by-ci"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "market-data-json",
+      "name": "market-data.json",
+      "description": "AI TRiSM market size estimates from 8 analyst firms, segment analysis, regional data, funding rounds, and M&A activity",
+      "contentUrl": "https://raw.githubusercontent.com/alpha-one-index/ai-trism-index/main/data/market-data.json",
+      "encodingFormat": "application/json",
+      "sha256": "auto-computed-by-ci"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "regulatory-tracker-json",
+      "name": "regulatory-tracker.json",
+      "description": "Global AI regulatory compliance tracker with key milestones, penalties, and enforcement dates for EU AI Act, NIST AI RMF, ISO 42001, and 7+ other regulations",
+      "contentUrl": "https://raw.githubusercontent.com/alpha-one-index/ai-trism-index/main/data/regulatory-tracker.json",
+      "encodingFormat": "application/json",
+      "sha256": "auto-computed-by-ci"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "vendors",
+      "name": "vendors",
+      "description": "Individual AI TRiSM vendor records with profile information",
+      "field": [
+        {"@type": "cr:Field", "@id": "vendors/name", "name": "name", "description": "Vendor company name", "dataType": "sc:Text", "source": {"fileObject": {"@id": "vendors-json"}, "extract": {"jsonPath": "$.categories.*.vendors[*].name"}}},
+        {"@type": "cr:Field", "@id": "vendors/website", "name": "website", "description": "Primary vendor website URL", "dataType": "sc:URL", "source": {"fileObject": {"@id": "vendors-json"}, "extract": {"jsonPath": "$.categories.*.vendors[*].website"}}},
+        {"@type": "cr:Field", "@id": "vendors/founded", "name": "founded", "description": "Year the company was founded", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "vendors-json"}, "extract": {"jsonPath": "$.categories.*.vendors[*].founded"}}},
+        {"@type": "cr:Field", "@id": "vendors/hq", "name": "hq", "description": "Company headquarters location", "dataType": "sc:Text", "source": {"fileObject": {"@id": "vendors-json"}, "extract": {"jsonPath": "$.categories.*.vendors[*].hq"}}},
+        {"@type": "cr:Field", "@id": "vendors/funding_total", "name": "funding_total", "description": "Total known funding raised", "dataType": "sc:Text", "source": {"fileObject": {"@id": "vendors-json"}, "extract": {"jsonPath": "$.categories.*.vendors[*].funding_total"}}},
+        {"@type": "cr:Field", "@id": "vendors/capabilities", "name": "capabilities", "description": "List of key product capabilities", "dataType": "sc:Text", "repeated": true, "source": {"fileObject": {"@id": "vendors-json"}, "extract": {"jsonPath": "$.categories.*.vendors[*].capabilities"}}},
+        {"@type": "cr:Field", "@id": "vendors/gartner_recognized", "name": "gartner_recognized", "description": "Whether vendor is recognized by Gartner", "dataType": "sc:Boolean", "source": {"fileObject": {"@id": "vendors-json"}, "extract": {"jsonPath": "$.categories.*.vendors[*].gartner_recognized"}}},
+        {"@type": "cr:Field", "@id": "vendors/status", "name": "status", "description": "Vendor operational status: Active, Acquired, or Inactive", "dataType": "sc:Text", "source": {"fileObject": {"@id": "vendors-json"}, "extract": {"jsonPath": "$.categories.*.vendors[*].status"}}}
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "market_estimates",
+      "name": "market_estimates",
+      "description": "AI TRiSM market size estimates from analyst firms",
+      "field": [
+        {"@type": "cr:Field", "@id": "market_estimates/analyst", "name": "analyst", "description": "Name of the analyst firm", "dataType": "sc:Text", "source": {"fileObject": {"@id": "market-data-json"}, "extract": {"jsonPath": "$.market_size.estimates[*].analyst"}}},
+        {"@type": "cr:Field", "@id": "market_estimates/cagr", "name": "cagr", "description": "Compound Annual Growth Rate (%)", "dataType": "sc:Number", "source": {"fileObject": {"@id": "market-data-json"}, "extract": {"jsonPath": "$.market_size.estimates[*].cagr"}}},
+        {"@type": "cr:Field", "@id": "market_estimates/source_url", "name": "source_url", "description": "Source URL for the analyst report", "dataType": "sc:URL", "source": {"fileObject": {"@id": "market-data-json"}, "extract": {"jsonPath": "$.market_size.estimates[*].source_url"}}}
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "regulations",
+      "name": "regulations",
+      "description": "Global AI regulations with key compliance dates and penalties",
+      "field": [
+        {"@type": "cr:Field", "@id": "regulations/name", "name": "name", "description": "Short regulation name", "dataType": "sc:Text", "source": {"fileObject": {"@id": "regulatory-tracker-json"}, "extract": {"jsonPath": "$.regulations[*].name"}}},
+        {"@type": "cr:Field", "@id": "regulations/jurisdiction", "name": "jurisdiction", "description": "Regulatory jurisdiction", "dataType": "sc:Text", "source": {"fileObject": {"@id": "regulatory-tracker-json"}, "extract": {"jsonPath": "$.regulations[*].jurisdiction"}}},
+        {"@type": "cr:Field", "@id": "regulations/status", "name": "status", "description": "Regulatory status", "dataType": "sc:Text", "source": {"fileObject": {"@id": "regulatory-tracker-json"}, "extract": {"jsonPath": "$.regulations[*].status"}}},
+        {"@type": "cr:Field", "@id": "regulations/source_url", "name": "source_url", "description": "Official source URL", "dataType": "sc:URL", "source": {"fileObject": {"@id": "regulatory-tracker-json"}, "extract": {"jsonPath": "$.regulations[*].source_url"}}}
+      ]
+    }
+  ]
+}
