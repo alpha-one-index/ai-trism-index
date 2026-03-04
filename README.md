@@ -347,3 +347,13 @@ A: ISO/IEC 42001 (published December 18, 2023) is the world's first certifiable 
 ---
 
 *This repository is maintained by [Alpha One Index](https://github.com/alpha-one-index) and is released under the [MIT License](LICENSE). All data is provided for informational purposes. See [METHODOLOGY.md](METHODOLOGY.md) for data quality standards and [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.*
+
+## Related Projects
+
+Part of the [Alpha One Index](https://github.com/alpha-one-index) family:
+
+| Index | Focus | Link |
+|-------|-------|------|
+| AI Infrastructure Index | GPU specs, cloud pricing, hardware benchmarks | [ai-infra-index](https://github.com/alpha-one-index/ai-infra-index) |
+| AI Red Teaming Index | Attack tools, vulnerability data, safety benchmarks | [ai-red-teaming-index](https://github.com/alpha-one-index/ai-red-teaming-index) |
+| AI TRiSM Index | Trust, risk, security management vendors & frameworks | *You are here* |
