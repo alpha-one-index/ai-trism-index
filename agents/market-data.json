@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "AI Agent Security Market Forecasts",
+    "description": "Market sizing and growth forecasts for AI agent security, a sub-segment of AI TRiSM",
+    "last_updated": "2026-03-03",
+    "currency": "USD",
+    "source_index": "alpha-one-index/ai-trism-index"
+  },
+  "market_overview": {
+    "parent_market": "AI TRiSM",
+    "parent_market_2025_usd_billions": 2.95,
+    "parent_market_2035_usd_billions": 21.0,
+    "parent_market_cagr_percent": 21.7,
+    "parent_source": "Precedence Research",
+    "agent_security_estimated_share_2025_percent": 8,
+    "agent_security_estimated_share_2030_percent": 25,
+    "rationale": "Agent security is the fastest-growing sub-segment of AI TRiSM as enterprise agent deployment scales"
+  },
+  "forecasts": [
+    {
+      "year": 2025,
+      "ai_trism_total_usd_billions": 2.95,
+      "agent_security_estimated_usd_millions": 236,
+      "key_drivers": ["Gartner Cool Vendors published", "First enterprise agent security platforms"]
+    },
+    {
+      "year": 2026,
+      "ai_trism_total_usd_billions": 3.59,
+      "agent_security_estimated_usd_millions": 430,
+      "key_drivers": ["OWASP Agentic Top 10 released", "EU AI Act GPAI obligations", "Predicted major agent breach"]
+    },
+    {
+      "year": 2027,
+      "ai_trism_total_usd_billions": 4.37,
+      "agent_security_estimated_usd_millions": 765,
+      "key_drivers": ["EU AI Act full enforcement", "Gartner Agentic AI TRiSM distinct market segment", "Enterprise procurement wave"]
+    },
+    {
+      "year": 2028,
+      "ai_trism_total_usd_billions": 5.32,
+      "agent_security_estimated_usd_millions": 1130,
+      "key_drivers": ["Platform vendor integration", "MCP security standardization"]
+    },
+    {
+      "year": 2029,
+      "ai_trism_total_usd_billions": 6.47,
+      "agent_security_estimated_usd_millions": 1550,
+      "key_drivers": ["50%+ agent attacks via access control (Gartner)", "Consolidation wave"]
+    },
+    {
+      "year": 2030,
+      "ai_trism_total_usd_billions": 7.87,
+      "agent_security_estimated_usd_millions": 1970,
+      "key_drivers": ["Standard enterprise security capability", "Agent security maturity"]
+    },
+    {
+      "year": 2035,
+      "ai_trism_total_usd_billions": 21.0,
+      "agent_security_estimated_usd_millions": 5250,
+      "key_drivers": ["Ubiquitous agent deployment", "Fully integrated governance"]
+    }
+  ],
+  "key_statistics": {
+    "enterprise_teams_with_agents_deployed_percent": 81,
+    "teams_with_full_security_approval_percent": 14.4,
+    "fortune_500_deploying_agents_percent": 80,
+    "gartner_agent_attack_forecast_by_2029_percent": 50,
+    "owasp_agentic_risk_categories": 10
+  },
+  "funding_highlights": [
+    {"vendor": "Fiddler AI", "amount_usd_millions": 73, "round": "Series C", "date": "2025"},
+    {"vendor": "ProtectAI", "amount_usd_millions": 60, "round": "Series A", "date": "2024"},
+    {"vendor": "HiddenLayer", "amount_usd_millions": 50, "round": "Series A", "date": "2024"},
+    {"vendor": "Credo AI", "amount_usd_millions": 42.8, "round": "Series B", "date": "2023"},
+    {"vendor": "Noma Security", "amount_usd_millions": 32, "round": "Seed", "date": "2024"},
+    {"vendor": "CalypsoAI", "amount_usd_millions": 30, "round": "Series A", "date": "2024"},
+    {"vendor": "Dynamo AI", "amount_usd_millions": 27, "round": "Series A", "date": "2024"},
+    {"vendor": "Pangea", "amount_usd_millions": 29, "round": "Series A", "date": "2024"},
+    {"vendor": "Opal", "amount_usd_millions": 22, "round": "Series A", "date": "2024"},
+    {"vendor": "Lakera", "amount_usd_millions": 20, "round": "Series A", "date": "2024"},
+    {"vendor": "Lasso Security", "amount_usd_millions": 20, "round": "Seed", "date": "2024"},
+    {"vendor": "Prompt Security", "amount_usd_millions": 18, "round": "Seed+", "date": "2024"}
+  ],
+  "ma_activity": [
+    {"target": "Aim Security", "acquirer": "Cato Networks", "date": "2025-09", "rationale": "Integrate agentic AI TRiSM into SASE platform"},
+    {"target": "Robust Intelligence", "acquirer": "Cisco", "date": "2024", "rationale": "AI firewall + continuous validation for Cisco security portfolio"}
+  ],
+  "sources": [
+    "Precedence Research AI TRiSM Market Report",
+    "Gravitee State of AI Agent Security 2026",
+    "CyberArk AI Agent Security Market 2026",
+    "Forbes Agentic AI 2026 Predictions",
+    "Gartner Cool Vendors in Agentic AI TRiSM (Sep 2025)",
+    "CSA Agentic AI Predictions 2026"
+  ]
+}
