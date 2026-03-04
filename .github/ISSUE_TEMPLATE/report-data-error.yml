@@ -1,0 +1,48 @@
+name: Report Data Error
+description: Report incorrect or outdated vendor data, market figures, or regulatory info
+title: "[Data Error] "
+labels: ["bug", "good first issue"]
+body:
+  - type: dropdown
+    id: data_type
+    attributes:
+      label: Data Type
+      options:
+        - Vendor Information
+        - Market Data
+        - Regulatory Tracker
+        - Funding Data
+        - M&A Data
+    validations:
+      required: true
+  - type: input
+    id: affected_entry
+    attributes:
+      label: Affected Entry
+      placeholder: e.g., Vendor name, regulation name, or market figure
+    validations:
+      required: true
+  - type: textarea
+    id: current_value
+    attributes:
+      label: Current (Incorrect) Value
+      placeholder: What does the data currently say?
+    validations:
+      required: true
+  - type: textarea
+    id: correct_value
+    attributes:
+      label: Correct Value
+      placeholder: What should the data say?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      placeholder: Link to the source confirming the correct data
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      placeholder: Any other details
