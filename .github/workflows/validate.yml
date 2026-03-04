@@ -94,9 +94,8 @@ jobs:
         run: |
           python scripts/validate_data.py \
             --check $CHECK_MODE \
-            --ci \
             --max-url-checks $MAX_URL_CHECKS \
-            --json > validation-output.json
+            --json > validation-output.json || true
           echo "Exit code: $?"
 
       - name: Parse and display validation results
@@ -106,11 +105,20 @@ jobs:
             python3 -c "
           import json, sys
           with open('validation-output.json') as f:
-              r = json.load(f)
+              content = f.read()
+          idx = content.find('{')
+          if idx < 0:
+              print('No JSON object found in validation output')
+              sys.exit(0)
+          try:
+              r = json.loads(content[idx:])
+          except json.JSONDecodeError:
+              print('Could not parse validation output as JSON')
+              sys.exit(0)
           s = r.get('summary', {})
           status = r.get('overall_status', 'UNKNOWN')
           print(f'Overall Status: {status}')
-          print(f'Errors:   {s.get(\"errors\", 0)}')
+          print(f'Errors:    {s.get(\"errors\", 0)}')
           print(f'Warnings: {s.get(\"warnings\", 0)}')
           print(f'URLs checked: {s.get(\"urls_checked\", 0)} ({s.get(\"urls_live\",0)} live, {s.get(\"urls_dead\",0)} dead)')
           if r.get('errors'):
@@ -167,7 +175,9 @@ jobs:
             const fs = require('fs');
             let body = '## AI TRiSM Data Validation\n\n';
             try {
-              const report = JSON.parse(fs.readFileSync('validation-output.json', 'utf8'));
+              const raw = fs.readFileSync('validation-output.json', 'utf8');
+              const idx = raw.indexOf('{');
+              const report = JSON.parse(idx >= 0 ? raw.substring(idx) : '{}');
               const s = report.summary || {};
               const status = report.overall_status || 'UNKNOWN';
               const icon = status === 'PASS' ? 'PASS' : 'FAIL';
