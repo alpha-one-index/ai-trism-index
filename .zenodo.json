@@ -1,0 +1,42 @@
+{
+  "title": "AI TRiSM Market Index: Vendor Profiles, Regulatory Tracking, and Framework Analysis",
+  "description": "The definitive open-source reference for AI Trust, Risk, and Security Management (AI TRiSM). 60+ vendor profiles, market sizing, regulatory tracking, and Gartner framework analysis.",
+  "upload_type": "dataset",
+  "creators": [
+    {
+      "name": "Alpha One Index",
+      "affiliation": "Independent AI Security Research"
+    }
+  ],
+  "keywords": [
+    "ai-trism",
+    "ai-trust",
+    "ai-risk-management",
+    "ai-security",
+    "gartner",
+    "ai-governance",
+    "vendor-landscape",
+    "regulatory-compliance"
+  ],
+  "license": {
+    "id": "MIT"
+  },
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/alpha-one-index/ai-trism-index",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/alpha-one-index/ai-red-teaming-index",
+      "relation": "isPartOf",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/alpha-one-index/ai-infra-index",
+      "relation": "isPartOf",
+      "scheme": "url"
+    }
+  ]
+}
