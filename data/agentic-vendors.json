@@ -1,0 +1,129 @@
+[
+  {
+    "vendor": "Zenity",
+    "category": "Agent Lifecycle Security",
+    "founded": 2021,
+    "hq": "Tel Aviv / New York",
+    "funding": {"total_usd_millions": null, "last_round": "Series B"},
+    "gartner_recognition": "Cool Vendor Agentic AI TRiSM 2025",
+    "owasp_risks_addressed": [1, 2, 3, 6, 7, 10],
+    "capabilities": {"build_time": true, "runtime": true, "post_execution": true, "agent_discovery": true, "tool_call_monitoring": true, "memory_security": true},
+    "supported_platforms": ["Microsoft 365 Copilot", "Salesforce Agentforce", "ChatGPT Enterprise", "AWS Bedrock Agents", "Google Vertex AI Agents", "GitHub Copilot Workspaces", "Cursor AI"],
+    "url": "https://zenity.io"
+  },
+  {
+    "vendor": "vijil",
+    "category": "Agent Evaluation",
+    "founded": 2023,
+    "hq": "USA",
+    "funding": {"total_usd_millions": null, "last_round": null},
+    "gartner_recognition": "Cool Vendor Agentic AI TRiSM 2025",
+    "owasp_risks_addressed": [6, 9],
+    "capabilities": {"continuous_evaluation": true, "adversarial_testing": true, "pre_deployment": true, "post_deployment": true},
+    "url": "https://vijil.ai"
+  },
+  {
+    "vendor": "Lakera",
+    "category": "AI Input Security",
+    "founded": 2021,
+    "hq": "Zurich",
+    "funding": {"total_usd_millions": 20, "last_round": "Series A"},
+    "owasp_risks_addressed": [1, 5],
+    "capabilities": {"prompt_injection_detection": true, "guardrails": true, "input_filtering": true},
+    "url": "https://lakera.ai"
+  },
+  {
+    "vendor": "Fiddler AI",
+    "category": "AI Observability",
+    "founded": 2018,
+    "hq": "Palo Alto",
+    "funding": {"total_usd_millions": 73, "last_round": "Series C"},
+    "gartner_recognition": "CB Insights #1 AI Agent Security 2026",
+    "owasp_risks_addressed": [2, 8, 10],
+    "capabilities": {"control_plane": true, "dependency_mapping": true, "circuit_breakers": true, "anomaly_detection": true},
+    "url": "https://fiddler.ai"
+  },
+  {
+    "vendor": "CyberArk",
+    "category": "Identity Security",
+    "founded": 1999,
+    "hq": "Newton MA",
+    "funding": {"total_usd_millions": null, "last_round": null},
+    "owasp_risks_addressed": [3, 7],
+    "capabilities": {"privileged_access": true, "agentic_identity": true, "credential_rotation": true, "inter_agent_auth": true},
+    "url": "https://cyberark.com"
+  },
+  {
+    "vendor": "Gravitee",
+    "category": "API + Agent Gateway",
+    "founded": 2015,
+    "hq": "London",
+    "funding": {"total_usd_millions": null, "last_round": null},
+    "owasp_risks_addressed": [3, 4, 7],
+    "capabilities": {"mcp_gateway": true, "agentic_iam": true, "api_security": true, "rate_limiting": true, "server_auth": true},
+    "url": "https://gravitee.io"
+  },
+  {
+    "vendor": "ProtectAI",
+    "category": "ML Supply Chain",
+    "founded": 2022,
+    "hq": "Seattle",
+    "funding": {"total_usd_millions": 60, "last_round": "Series A"},
+    "owasp_risks_addressed": [4, 5],
+    "capabilities": {"supply_chain_scanning": true, "model_scanning": true, "dependency_analysis": true, "sbom": true},
+    "url": "https://protectai.com"
+  },
+  {
+    "vendor": "Lasso Security",
+    "category": "AI Governance + Runtime",
+    "founded": 2023,
+    "hq": "Israel",
+    "funding": {"total_usd_millions": 20, "last_round": "Seed"},
+    "gartner_recognition": "Gartner Rep Vendor 2024+2025",
+    "owasp_risks_addressed": [6],
+    "capabilities": {"intent_security": true, "memory_validation": true, "policy_enforcement": true},
+    "url": "https://lasso.security"
+  },
+  {
+    "vendor": "Palo Alto Networks",
+    "category": "Cloud AI Security",
+    "founded": 2005,
+    "hq": "Santa Clara",
+    "funding": {"total_usd_millions": null, "last_round": null},
+    "owasp_risks_addressed": [2, 10],
+    "capabilities": {"prisma_airs": true, "agent_discovery": true, "aispm": true, "runtime_protection": true},
+    "url": "https://paloaltonetworks.com"
+  },
+  {
+    "vendor": "Credo AI",
+    "category": "AI Governance",
+    "founded": 2020,
+    "hq": "San Francisco",
+    "funding": {"total_usd_millions": 42.8, "last_round": "Series B"},
+    "gartner_recognition": "Gartner Rep Vendor AI TRiSM 2025",
+    "owasp_risks_addressed": [9],
+    "capabilities": {"governance_platform": true, "policy_automation": true, "explainability": true, "compliance": true},
+    "url": "https://credo.ai"
+  },
+  {
+    "vendor": "Prompt Security",
+    "category": "AI Prompt Firewall",
+    "founded": 2023,
+    "hq": "Israel",
+    "funding": {"total_usd_millions": 18, "last_round": "Seed+"},
+    "gartner_recognition": "Cool Vendor AI Security 2025",
+    "owasp_risks_addressed": [1, 5],
+    "capabilities": {"prompt_firewall": true, "input_output_filtering": true, "code_injection_prevention": true},
+    "url": "https://prompt.security"
+  },
+  {
+    "vendor": "Straiker",
+    "category": "Agent Runtime Guardrails",
+    "founded": 2024,
+    "hq": "USA",
+    "funding": {"total_usd_millions": null, "last_round": null},
+    "owasp_risks_addressed": [1, 2, 8],
+    "capabilities": {"trace_level_monitoring": true, "sub_second_detection": true, "behavioral_baselines": true},
+    "url": "https://straiker.ai"
+  }
+]
