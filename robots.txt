@@ -15,6 +15,17 @@ Allow: /data/regulatory-tracker.json
 Allow: /data/validation-report.json
 Allow: /data/fetch-report.json
 
+# Agentic AI Governance & Security (A2GS)
+Allow: /agents/
+Allow: /agents/README.md
+Allow: /agents/owasp-agentic-top10.md
+Allow: /agents/vendors.csv
+Allow: /agents/frameworks-at-risk.md
+Allow: /agents/mcp-security.md
+Allow: /agents/standards.md
+Allow: /agents/market-data.json
+Allow: /data/agentic-vendors.json
+
 # Documentation and metadata
 Allow: /llms.txt
 Allow: /croissant.json
