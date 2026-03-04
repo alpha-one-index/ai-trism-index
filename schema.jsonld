@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "AI TRiSM Market Index",
+  "description": "Open-source reference for AI Trust, Risk, and Security Management. 60+ vendor profiles, market sizing, regulatory tracking, and Gartner framework analysis.",
+  "url": "https://alpha-one-index.github.io/ai-trism-index",
+  "sameAs": "https://github.com/alpha-one-index/ai-trism-index",
+  "license": "https://opensource.org/licenses/MIT",
+  "isAccessibleForFree": true,
+  "creator": {
+    "@type": "Organization",
+    "name": "Alpha One Index",
+    "url": "https://github.com/alpha-one-index"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://raw.githubusercontent.com/alpha-one-index/ai-trism-index/main/data/vendors.json"
+    }
+  ],
+  "keywords": [
+    "AI TRiSM",
+    "AI trust",
+    "AI risk management",
+    "AI security",
+    "AI governance",
+    "Gartner",
+    "vendor landscape",
+    "regulatory compliance"
+  ],
+  "datePublished": "2026-03-01",
+  "dateModified": "2026-03-04",
+  "version": "1.0.0"
+}
