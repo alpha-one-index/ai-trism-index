@@ -1,0 +1,56 @@
+name: Add a Vendor
+description: Suggest a new AI TRiSM vendor to add to the index
+title: "[Vendor] "
+labels: ["enhancement", "good first issue"]
+body:
+  - type: input
+    id: vendor_name
+    attributes:
+      label: Vendor Name
+      placeholder: e.g., Acme AI Security
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website URL
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - AI Governance
+        - Runtime Security / Guardrails
+        - Explainability & Fairness
+        - Red Teaming & Security Testing
+        - Model Monitoring & Observability
+        - Data Privacy & Protection
+        - Content Safety & Moderation
+        - Compliance / Regulatory
+        - Large Cloud Vendors
+        - Emerging & Specialists
+    validations:
+      required: true
+  - type: input
+    id: hq
+    attributes:
+      label: Headquarters
+      placeholder: e.g., San Francisco, CA, USA
+  - type: input
+    id: founded
+    attributes:
+      label: Year Founded
+      placeholder: e.g., 2021
+  - type: textarea
+    id: capabilities
+    attributes:
+      label: Key Capabilities
+      placeholder: List the main capabilities or features
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      placeholder: Any other relevant info (funding, Gartner recognition, etc.)
