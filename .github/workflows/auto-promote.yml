@@ -17,25 +17,6 @@ jobs:
       - name: Ping Bing Sitemap
         run: curl -s "https://www.bing.com/ping?sitemap=https://alpha-one-index.github.io/ai-trism-index/sitemap.xml"
 
-      - name: Ping IndexNow (Bing/Yandex/DuckDuckGo)
-        run: |
-          curl -s -X POST "https://api.indexnow.org/indexnow" \
-            -H "Content-Type: application/json" \
-            -d '{
-              "host": "alpha-one-index.github.io",
-              "key": "${{ secrets.INDEXNOW_KEY }}",
-              "urlList": [
-                "https://alpha-one-index.github.io/ai-trism-index/",
-                "https://alpha-one-index.github.io/ai-trism-index/agents/README.md",
-                "https://alpha-one-index.github.io/ai-trism-index/agents/owasp-agentic-top10.md",
-                "https://alpha-one-index.github.io/ai-trism-index/agents/vendors.csv",
-                "https://alpha-one-index.github.io/ai-trism-index/agents/frameworks-at-risk.md",
-                "https://alpha-one-index.github.io/ai-trism-index/agents/mcp-security.md",
-                "https://alpha-one-index.github.io/ai-trism-index/agents/standards.md",
-                "https://alpha-one-index.github.io/ai-trism-index/agents/market-data.json"
-              ]
-            }'
-
   refresh-timestamps:
     runs-on: ubuntu-latest
     if: github.event_name == 'schedule'
@@ -58,7 +39,7 @@ jobs:
     if: github.event_name == 'push'
     steps:
       - uses: actions/checkout@v4
-      - name: Auto-create discoverable issues for SEO
+      - name: Auto-create discoverable labels
         uses: actions/github-script@v7
         with:
           script: |
