@@ -1,0 +1,31 @@
+vendor,category,founded,hq,funding_total_usd_millions,last_round,gartner_recognition,owasp_risks_addressed,key_capability,url
+Zenity,Agent Lifecycle Security,2021,Tel Aviv / New York,,Series B,Cool Vendor Agentic AI TRiSM 2025,"1,2,3,6,7,10",Full-lifecycle agent security: build-time + runtime + post-execution,https://zenity.io
+vijil,Agent Evaluation,2023,USA,,,Cool Vendor Agentic AI TRiSM 2025,"6,9",Continuous adversarial evaluation for LLMs and agents,https://vijil.ai
+Aim Security (Cato Networks),GenAI Network Security,2023,Israel,,Acquired Sep 2025,Cool Vendor Agentic AI TRiSM 2025,"1,3",Shadow AI discovery + GenAI governance at network layer,https://catonetworks.com
+Lakera,AI Input Security,2021,Zurich,20,Series A,,"1,5",Prompt injection detection + guardrails (Gandalf),https://lakera.ai
+Prompt Security,AI Prompt Firewall,2023,Israel,18,Seed+,Cool Vendor AI Security 2025,"1,5",Prompt firewall for enterprise AI applications,https://prompt.security
+Fiddler AI,AI Observability,2018,Palo Alto,73,Series C,CB Insights #1 AI Agent Security 2026,"2,8,10",Control plane for compound/agentic AI,https://fiddler.ai
+Straiker,Agent Runtime Guardrails,2024,USA,,,,,Trace-level behavioral monitoring; sub-second detection,https://straiker.ai
+Lasso Security,AI Governance + Runtime,2023,Israel,20,Seed,Gartner Rep Vendor 2024+2025,6,Intent security for AI agents,https://lasso.security
+ProtectAI,ML Supply Chain,2022,Seattle,60,Series A,,"4,5",AI/ML supply chain security + model scanning,https://protectai.com
+Credo AI,AI Governance,2020,San Francisco,42.8,Series B,Gartner Rep Vendor AI TRiSM 2025,9,AI governance platform + policy automation,https://credo.ai
+CyberArk,Identity Security,1999,Newton MA,,,,"3,7",Privileged access + agentic identity management,https://cyberark.com
+Palo Alto Networks,Cloud AI Security,2005,Santa Clara,,,,"2,10",Prisma AIRS: AI agent discovery + AISPM + runtime,https://paloaltonetworks.com
+Gravitee,API + Agent Gateway,2015,London,,,,"3,4,7",MCP gateway + agentic IAM + API security,https://gravitee.io
+Holistic AI,AI Risk Management,2018,London,,,Gartner Rep Vendor AI TRiSM,9,AI risk assessment + bias auditing + compliance,https://holisticai.com
+Robust Intelligence (Cisco),AI Security,2019,San Francisco,,Acquired 2024,,"1,6",AI firewall + continuous validation,https://robustintelligence.com
+Mindgard,AI Red Teaming,2022,London,8,Seed,,"1,6,9",Automated AI red teaming + threat intelligence,https://mindgard.ai
+CalypsoAI,AI Model Security,2018,Washington DC,30,Series A,,"1,2",AI gateway + model hardening,https://calypsoai.com
+Opal,Access Management,2022,San Francisco,22,Series A,,3,Dynamic access management for agents and humans,https://opal.dev
+HiddenLayer,ML Model Security,2022,Austin,50,Series A,,"4,10",ML model threat detection + protection,https://hiddenlayer.com
+Dynamo AI,AI Compliance,2023,San Francisco,27,Series A,,9,AI compliance + safety evaluation,https://dynamo.ai
+Snyk,Developer Security,2015,Boston,900,Series G,,4,Software composition analysis for agent dependencies,https://snyk.io
+Dynatrace,Observability,2005,Waltham MA,,,,8,AI-powered observability + agent monitoring,https://dynatrace.com
+Arize AI,ML Observability,2020,Berkeley,62,Series B,,"8,10",LLM/agent observability + evaluation,https://arize.com
+Pangea,Security APIs,2022,Palo Alto,29,Series A,,"3,7",Security APIs for AI applications (auth/audit/redact),https://pangea.cloud
+Noma Security,AI App Security,2024,Israel,32,Seed,,"1,2,4",AI application security posture management,https://nomasecurity.com
+Pillar Security,AI Security Platform,2023,Israel,9,Seed,,"1,6",AI security for LLM applications,https://pillar.security
+SplxAI,Agent Red Teaming,2024,USA,,,,,Automated red teaming for AI agents,https://splx.ai
+Apollo Security,AI Security,2024,USA,,,,,AI application security testing,https://apollosecurity.ai
+Wiz,Cloud Security,2020,New York,900,Series E,,"2,4",Cloud security with AI workload protection,https://wiz.io
+Databricks,Data + AI Platform,2013,San Francisco,4100,Series I,,,Lakehouse AI with governance and observability,https://databricks.com
