@@ -8,6 +8,10 @@
 [![Data Validation: Self_Auditing](https://img.shields.io/badge/Data%20Validation-Self__Auditing-brightgreen.svg)](METHODOLOGY.md)
 [![Croissant: ML_Metadata](https://img.shields.io/badge/Croissant-ML__Metadata-ff69b4.svg)]()
 [![Provenance: Documented](https://img.shields.io/badge/Provenance-Documented-blueviolet.svg)](METHODOLOGY.md)
+[![GitHub Stars](https://img.shields.io/github/stars/alpha-one-index/ai-trism-index?style=social)](https://github.com/alpha-one-index/ai-trism-index)
+[![Last Commit](https://img.shields.io/github/last-commit/alpha-one-index/ai-trism-index.svg)](https://github.com/alpha-one-index/ai-trism-index/commits/main)
+[![GitHub Pages](https://img.shields.io/badge/Live_Dashboard-Visit-58a6ff.svg)](https://alpha-one-index.github.io/ai-trism-index/)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/alpha-one-index/ai-trism-index/auto-promote.yml?label=Auto%20Promote)](https://github.com/alpha-one-index/ai-trism-index/actions)
 
 > **Maintained by [Alpha One Index](https://github.com/alpha-one-index)**
 
