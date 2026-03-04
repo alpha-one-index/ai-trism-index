@@ -95,6 +95,56 @@
     <loc>https://alpha-one-index.github.io/ai-trism-index/robots.txt</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>yearly</changefreq>
+
+              <!-- Agentic AI Governance & Security (A2GS) -->
+    <url>
+        <loc>https://alpha-one-index.github.io/ai-trism-index/agents/README.md</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://alpha-one-index.github.io/ai-trism-index/agents/owasp-agentic-top10.md</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://alpha-one-index.github.io/ai-trism-index/agents/vendors.csv</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://alpha-one-index.github.io/ai-trism-index/agents/frameworks-at-risk.md</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://alpha-one-index.github.io/ai-trism-index/agents/mcp-security.md</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://alpha-one-index.github.io/ai-trism-index/agents/standards.md</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://alpha-one-index.github.io/ai-trism-index/agents/market-data.json</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     <priority>0.3</priority>
   </url>
 
