@@ -31,6 +31,7 @@ Market size: **~$2.95B in 2025**, growing to **$21B+ by 2035** at **~21.7% CAGR*
 - [Quick Links](#quick-links)
 - [Data Provenance & Validation](#data-provenance--validation)
 - [FAQ](#faq)
+- - [Agentic AI Governance & Security (A2GS)](#agentic-ai-governance--security-a2gs)
 
 ---
 
@@ -310,6 +311,32 @@ A: Veeam's acquisition of Securiti AI for **$1.725 billion** (December 2025) is 
 **Q: What is agentic AI security and why does it matter?**
 A: Agentic AI refers to autonomous AI systems (AI agents) that plan, use tools, and take real-world actions — booking meetings, sending emails, modifying databases — without human review of each step. Unlike a simple chatbot, an agent's mistakes or security compromises can be irreversible. Gartner published the first-ever "Cool Vendors in Agentic AI TRiSM" report in September 2025, naming Zenity, Aim Security, and vijil. Gartner predicts 50%+ of AI attacks will exploit access control issues via prompt injection through 2029. See [specs/agentic-ai-security.md](specs/agentic-ai-security.md).
 
+
+
+## Agentic AI Governance & Security (A2GS)
+
+This repository now includes the **first comprehensive open-source index for Agentic AI Governance & Security (A2GS)** — an extension of AI TRiSM focused on securing autonomous AI agent systems.
+
+### What's Covered
+
+| Resource | Description |
+|----------|-------------|
+| [OWASP Agentic Top 10](agents/owasp-agentic-top10.md) | Full mapping of all 10 OWASP 2026 agentic risks with vendor mitigations |
+| [Security Vendors](agents/vendors.csv) | 30+ vendors securing AI agents with funding and OWASP coverage |
+| [Frameworks at Risk](agents/frameworks-at-risk.md) | Security analysis of LangChain, CrewAI, AutoGen, and more |
+| [MCP Security](agents/mcp-security.md) | Model Context Protocol supply chain risks and mitigations |
+| [Standards](agents/standards.md) | Regulatory standards covering agentic AI systems |
+| [Market Data](agents/market-data.json) | Agentic AI security market sizing and forecasts |
+
+### Why A2GS?
+
+- **81%** of enterprise teams deployed agents past planning; only **14.4%** have full security approval (Gravitee 2026)
+- OWASP released the first **Top 10 for Agentic Applications** in 2026
+- Forbes predicts a major public **agentic AI breach in 2026**
+- Gartner published inaugural **Cool Vendors in Agentic AI TRiSM** (September 2025)
+- No comprehensive structured index existed for this space — until now
+
+See the full [A2GS Index](agents/README.md) for details.
 **Q: What is ISO/IEC 42001 and do I need it?**
 A: ISO/IEC 42001 (published December 18, 2023) is the world's first certifiable international standard for AI Management Systems. Unlike NIST AI RMF (voluntary guidance) or the EU AI Act (law), ISO/IEC 42001 enables third-party certification — like ISO 27001 for information security. Organizations in regulated industries (financial services, healthcare, critical infrastructure) that need to demonstrate AI governance to regulators, customers, or auditors benefit most. ISO/IEC 42001 certification may also support EU AI Act conformity assessment for high-risk systems. See [specs/regulatory-landscape.md](specs/regulatory-landscape.md).
 
