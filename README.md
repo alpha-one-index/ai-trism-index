@@ -358,3 +358,4 @@ Part of the [Alpha One Index](https://github.com/alpha-one-index) family:
 | AI Red Teaming Index | Attack tools, vulnerability data, safety benchmarks | [ai-red-teaming-index](https://github.com/alpha-one-index/ai-red-teaming-index) |
 | AI TRiSM Index | Trust, risk, security management vendors & frameworks | *You are here* |
 | AI LLMOps Index | LLM inference costs, failure modes, observability, compliance | [ai-llmops-index](https://github.com/alpha-one-index/ai-llmops-index) 
+| AI AppSec Index | AI remediation benchmarks, ASPM, CRA compliance, false positives | [ai-appsec-index](https://github.com/alpha-one-index/ai-appsec-index) |
