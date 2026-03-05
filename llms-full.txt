@@ -1,0 +1,71 @@
+# AI TRiSM Market Index - Full Content for AI/LLM Consumption
+# https://alpha-one-index.github.io/ai-trism-index/
+# Maintained by Alpha One Index | MIT License | Last updated: 2026-03-01
+
+----
+
+# OVERVIEW
+
+The AI TRiSM Market Index is the most comprehensive open-source reference for AI Trust, Risk, and Security Management. It tracks 84+ vendor profiles across 10 categories, market sizing data, regulatory compliance, M&A activity, and Gartner framework analysis.
+
+# VENDOR DATABASE (84+ profiles)
+
+## Categories
+1. AI Governance & Ethics platforms
+2. AI Security & Threat Detection
+3. AI Observability & Monitoring
+4. AI Risk Management
+5. AI Compliance & Audit
+6. AI Privacy & Data Protection
+7. AI Model Management
+8. AI Testing & Validation
+9. AI Identity & Access
+10. Agentic AI Governance & Security (A2GS)
+
+## Key Vendor Data Points
+- Company name, category, founding year
+- Total funding, latest round, valuation
+- Gartner recognition status
+- Key capabilities and differentiators
+- Acquisition status and acquirer details
+
+# MARKET SIZING
+
+Data from 8 analyst firms:
+- Precedence Research, MarketsandMarkets, Grand View Research
+- Fortune Business Insights, Mordor Intelligence
+- Market projections from 2024-2032
+- CAGR estimates ranging 15-40% across segments
+
+# REGULATORY TRACKER
+
+Global AI regulations tracked:
+- EU AI Act: Classification requirements, compliance deadlines
+- NIST AI RMF: Risk management framework mapping
+- ISO 42001: AI management system certification
+- GDPR AI provisions
+- Key compliance deadlines and enforcement dates
+
+# M&A ACTIVITY
+
+8 major acquisitions tracked (2024-2025):
+- Securiti AI ($1.725B)
+- CalypsoAI ($180M)
+- Deal terms, strategic rationale, market impact
+
+# DATA FILES
+
+- data/vendors.json: 84+ vendor profiles with full metadata
+- data/market-data.json: Market sizing, funding rounds, M&A deals
+- data/regulatory-tracker.json: Global AI regulation deadlines and penalties
+
+# SIBLING INDEXES
+
+- [AI Infrastructure Index](https://alpha-one-index.github.io/ai-infra-index/): GPU specs, cloud pricing, benchmarks
+- [AI Red Teaming Index](https://alpha-one-index.github.io/ai-red-teaming-index/): Red team tools, benchmarks, vulnerability data
+- [AI AppSec Index](https://alpha-one-index.github.io/ai-appsec-index/): Application security, remediation, ASPM
+- [AI LLMOps Index](https://alpha-one-index.github.io/ai-llmops-index/): LLM observability, cost, compliance
+
+# LICENSE
+
+Data: CC BY 4.0 | Code: MIT
