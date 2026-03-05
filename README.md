@@ -1,7 +1,7 @@
 # AI TRiSM Market Index
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Data: Auto Updated Hourly](https://img.shields.io/badge/Data-Auto%20Updated%20Hourly-blue.svg)]()
+[![Data: Updated Weekly](https://img.shields.io/badge/Data-Updated%20Weekly-blue.svg)]()
 [![Vendors: 60+](https://img.shields.io/badge/Vendors-60%2B-green.svg)](specs/vendor-profiles.md)
 [![Categories: 10](https://img.shields.io/badge/Categories-10-orange.svg)](specs/vendor-profiles.md)
 [![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-lightgrey.svg)](CHANGELOG.md)
