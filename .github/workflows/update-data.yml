@@ -46,7 +46,7 @@ jobs:
       - name: Verify Python stdlib-only (no pip installs needed)
         run: |
           python --version
-          echo "Using Python stdlib only — no additional dependencies required"
+          echo "Using Python stdlib only -- no additional dependencies required"
 
       - name: Run fetch_vendors.py
         env:
@@ -79,11 +79,14 @@ jobs:
           "
           fi
 
+      - name: Update CHANGELOG with data refresh entry
+        run: python scripts/update_changelog.py
+
       - name: Commit and push data changes
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add data/
+          git add data/ CHANGELOG.md
           if git diff --cached --quiet; then
             echo "No changes to data files"
           else
@@ -101,6 +104,7 @@ jobs:
           - Total vendors: ${VENDOR_COUNT}
           - Regulatory sources verified
           - History snapshot archived
+          - CHANGELOG.md updated
 
           [skip ci]"
             git push
@@ -121,7 +125,7 @@ jobs:
           print(signals)
           " 2>/dev/null || echo '0')
             if [ "$SIGNALS" -gt "0" ]; then
-              echo "⚠ Acquisition signals detected: $SIGNALS vendor(s) show acquisition language on their website"
+              echo "Acquisition signals detected: $SIGNALS vendor(s) show acquisition language on their website"
               echo "Review data/fetch-report.json for details"
             fi
           fi
