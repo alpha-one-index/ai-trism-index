@@ -1,6 +1,8 @@
 # Gartner AI TRiSM Framework
 
 > Deep-dive reference for Gartner's AI Trust, Risk, and Security Management framework, 2025 Market Guide findings, mandatory features, market trends, and representative vendor mapping. Last updated: March 2026.
+>
+> > **Cross-Index References:** For LLMOps observability platforms that implement Layer 2 runtime inspection, see the [AI LLMOps Index](https://github.com/alpha-one-index/ai-llmops-index). For red teaming and adversarial testing tools (Layer 2 security testing), see the [AI Red Teaming Index](https://github.com/alpha-one-index/ai-red-teaming-index). For infrastructure security (Layer 4), see the [AI Infrastructure Index](https://github.com/alpha-one-index/ai-infra-index).
 
 ---
 
