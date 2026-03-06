@@ -2,6 +2,9 @@
 
 > Comprehensive profiles for 60+ vendors across 10 AI TRiSM categories. All data sourced inline. Last updated: March 2026.
 
+
+> > **Cross-Index References:** For LLM-specific observability and inference cost data, see the [AI LLMOps Index](https://github.com/alpha-one-index/ai-llmops-index). For GPU and cloud infrastructure pricing, see the [AI Infrastructure Index](https://github.com/alpha-one-index/ai-infra-index). For application security tooling and ASPM benchmarks, see the [AI AppSec Index](https://github.com/alpha-one-index/ai-appsec-index). For red teaming tools and adversarial testing, see the [AI Red Teaming Index](https://github.com/alpha-one-index/ai-red-teaming-index).
+
 ---
 
 ## Table of Contents
