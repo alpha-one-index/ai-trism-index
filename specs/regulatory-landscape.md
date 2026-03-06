@@ -1,6 +1,8 @@
 # AI TRiSM Regulatory Landscape
 
 > Complete guide to global AI regulations, compliance frameworks, and industry-specific requirements for AI TRiSM programs. All data sourced inline. Last updated: March 2026.
+>
+> > **Cross-Index References:** For LLMOps compliance mapping (EU AI Act, NIST AI RMF), see the [AI LLMOps Index](https://github.com/alpha-one-index/ai-llmops-index). For application security compliance (CRA, SBOM), see the [AI AppSec Index](https://github.com/alpha-one-index/ai-appsec-index). For red teaming requirements under EU AI Act Art 9 and EO 14110, see the [AI Red Teaming Index](https://github.com/alpha-one-index/ai-red-teaming-index).
 
 ---
 
