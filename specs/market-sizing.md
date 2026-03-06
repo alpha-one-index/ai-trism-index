@@ -1,6 +1,8 @@
 # AI TRiSM Market Sizing
 
 > Comprehensive market analysis with data from 8 analyst firms. All figures include source citations. Last updated: March 2026.
+>
+> > **Cross-Index References:** For LLMOps market sizing (~$1.2B in 2025, ~45% CAGR), see the [AI LLMOps Index](https://github.com/alpha-one-index/ai-llmops-index). For AI infrastructure and GPU market data, see the [AI Infrastructure Index](https://github.com/alpha-one-index/ai-infra-index). For application security market benchmarks, see the [AI AppSec Index](https://github.com/alpha-one-index/ai-appsec-index).
 
 ---
 
