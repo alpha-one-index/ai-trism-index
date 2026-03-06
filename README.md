@@ -12,6 +12,8 @@
 [![Last Commit](https://img.shields.io/github/last-commit/alpha-one-index/ai-trism-index.svg)](https://github.com/alpha-one-index/ai-trism-index/commits/main)
 [![GitHub Pages](https://img.shields.io/badge/Live_Dashboard-Visit-58a6ff.svg)](https://alpha-one-index.github.io/ai-trism-index/)
 [![GitHub Actions](https://img.shields.io/github/actions/workflow/status/alpha-one-index/ai-trism-index/auto-promote.yml?label=Auto%20Promote)](https://github.com/alpha-one-index/ai-trism-index/actions)
+[![HuggingFace Dataset](https://img.shields.io/badge/🤗%20HuggingFace-Dataset-yellow.svg)](https://huggingface.co/datasets/alpha-one-index/ai-trism-index)
+[![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Dataset-blue.svg)](https://www.kaggle.com/datasets/alphaoneindex/ai-trism-index)
 
 > **Maintained by [Alpha One Index](https://github.com/alpha-one-index)**
 
@@ -46,6 +48,8 @@ The AI TRiSM Market Index is a continuously maintained, open-source reference da
 **What this index covers:**
 
 - **60+ vendor profiles** across 10 AI TRiSM categories — with funding, capabilities, customers, and pricing
+
+- This index is part of the [Alpha One Index](https://github.com/alpha-one-index) family of five open intelligence repositories. For GPU specs, cloud pricing, and AI hardware data, see the **[AI Infrastructure Index](https://github.com/alpha-one-index/ai-infra-index)**. For LLM inference costs, observability platforms, and failure mode taxonomy, see the **[AI LLMOps Index](https://github.com/alpha-one-index/ai-llmops-index)**. For application security benchmarks, ASPM tools, and CRA compliance, see the **[AI AppSec Index](https://github.com/alpha-one-index/ai-appsec-index)**. For red teaming tools, adversarial testing, and LLM vulnerability databases, see the **[AI Red Teaming Index](https://github.com/alpha-one-index/ai-red-teaming-index)**.
 - **Market sizing data** from 8 analyst firms (Precedence Research, Research and Markets, MarketsandMarkets, Polaris, Allied, Market.us, Business Research, Analytics Canada)
 - **Complete regulatory landscape** — EU AI Act, NIST AI RMF, ISO/IEC 42001, US state laws, China regulations, industry-specific rules
 - **Gartner AI TRiSM four-layer framework** with mandatory features, market trends, and vendor mapping
