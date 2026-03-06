@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-06T21:56:46Z",
+  "generated_at": "2026-03-06T23:00:42Z",
   "overall_status": "PASS",
   "summary": {
     "errors": 0,
@@ -11,9 +11,9 @@
   "schema_findings": [
     {
       "file": "vendors.json",
-      "source_urls_found": 2026-03-06T21:56:46Z [INFO] Validation report saved to /home/runner/work/ai-trism-index/ai-trism-index/data/validation-report.json
+      "source_urls_found": 2026-03-06T23:00:42Z [INFO] Validation report saved to /home/runner/work/ai-trism-index/ai-trism-index/data/validation-report.json
 {
-  "generated_at": "2026-03-06T21:56:46Z",
+  "generated_at": "2026-03-06T23:00:42Z",
   "overall_status": "PASS",
   "summary": {
     "errors": 0,
