@@ -1,0 +1,28 @@
+name: Update JSON-LD
+on:
+  workflow_dispatch:
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replace JSON-LD
+        run: |
+          python3 << 'SCRIPT'
+import re
+with open('index.html', 'r') as f:
+    content = f.read()
+new_jsonld = '{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"AI TRiSM Index","url":"https://alpha-one-index.github.io/ai-trism-index/","publisher":{"@id":"#org"}},{"@type":"Organization","@id":"#org","name":"Alpha One Index","url":"https://github.com/alpha-one-index","sameAs":["https://huggingface.co/alpha-one-index","https://www.kaggle.com/alphaoneindex"]},{"@type":"Dataset","name":"AI TRiSM Index","description":"Comprehensive dataset covering 60+ AI Trust, Risk, and Security Management vendors across 10 Gartner-defined categories, regulatory requirements, and Gartner framework analysis.","url":"https://github.com/alpha-one-index/ai-trism-index","license":"https://opensource.org/licenses/MIT","dateModified":"2026-03-06","creator":{"@id":"#org"},"keywords":["AI TRiSM","AI governance","AI compliance","AI risk management","responsible AI","EU AI Act","NIST AI RMF"],"distribution":{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://raw.githubusercontent.com/alpha-one-index/ai-trism-index/main/data/ai_trism_vendors.csv"},"variableMeasured":["vendor_name","category","framework","compliance_status","deployment_model"],"measurementTechnique":"Manual research and vendor documentation review"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is AI TRiSM?","acceptedAnswer":{"@type":"Answer","text":"AI TRiSM (Trust, Risk, and Security Management) is a Gartner framework for managing AI model governance, risk, compliance, and security across the enterprise lifecycle."}},{"@type":"Question","name":"How many vendors are tracked in the AI TRiSM Index?","acceptedAnswer":{"@type":"Answer","text":"The AI TRiSM Index tracks 60+ vendors across 10 Gartner-defined categories including AI validation, LLM security, AI monitoring, and AI governance."}},{"@type":"Question","name":"What compliance frameworks does the dataset cover?","acceptedAnswer":{"@type":"Answer","text":"The dataset covers EU AI Act, NIST AI RMF, ISO 42001, SOC 2 Type II, FedRAMP, GDPR, and ISO 27001 compliance data for each vendor."}},{"@type":"Question","name":"How often is the AI TRiSM Index updated?","acceptedAnswer":{"@type":"Answer","text":"The AI TRiSM Index is updated weekly with new vendor profiles, compliance status changes, and framework analysis updates."}},{"@type":"Question","name":"Is the AI TRiSM Index free to use?","acceptedAnswer":{"@type":"Answer","text":"Yes, the AI TRiSM Index is MIT licensed and free for research, vendor evaluation, and compliance planning. Data is available in CSV and JSON formats."}}]}]}'
+content = re.sub(r'(?<=<script type="application/ld\+json">\n).*?(?=\n</script>)', new_jsonld, content, flags=re.DOTALL)
+with open('index.html', 'w') as f:
+    f.write(content)
+SCRIPT
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "fix: upgrade JSON-LD with @graph, FAQPage, distribution, dateModified"
+          git push
