@@ -22,6 +22,11 @@ permissions:
   contents: write
   issues: write
 
+env:
+  S3_BUCKET: ai-trism-index-data
+  S3_PREFIX: trism-market-data
+  ADX_DATASET_ID: ${{ secrets.ADX_DATASET_ID }}
+
 concurrency:
   group: update-data
   cancel-in-progress: false
@@ -70,7 +75,7 @@ jobs:
             python3 -c "
           import json
           with open('data/fetch-report.json') as f:
-              r = json.load(f)
+            r = json.load(f)
           s = r.get('summary', {})
           print(f\"Vendors checked:      {s.get('vendors_checked', 0)}\")
           print(f\"Websites live:        {s.get('websites_live', 0)}\")
@@ -94,7 +99,7 @@ jobs:
             VENDOR_COUNT=$(python3 -c "
           import json
           with open('data/vendors.json') as f:
-              d = json.load(f)
+            d = json.load(f)
           count = sum(len(c.get('vendors',[])) for c in d.get('categories',{}).values())
           print(count)
           " 2>/dev/null || echo '?')
@@ -111,6 +116,75 @@ jobs:
             echo "Changes pushed successfully"
           fi
 
+      - name: Configure AWS credentials
+        if: env.ADX_DATASET_ID != ''
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Upload to S3 for AWS Data Exchange
+        if: env.ADX_DATASET_ID != ''
+        run: |
+          TIMESTAMP=$(date -u '+%Y-%m-%dT%H:%M')
+          echo "Uploading TRiSM market data to S3..."
+          aws s3 cp data/vendors.json "s3://${S3_BUCKET}/${S3_PREFIX}/latest/vendors.json"
+          if [ -f data/fetch-report.json ]; then
+            aws s3 cp data/fetch-report.json "s3://${S3_BUCKET}/${S3_PREFIX}/latest/fetch-report.json"
+          fi
+          aws s3 cp data/vendors.json "s3://${S3_BUCKET}/${S3_PREFIX}/snapshots/${TIMESTAMP}-vendors.json"
+          echo "S3_UPLOAD=true" >> $GITHUB_ENV
+          echo "Uploaded to s3://${S3_BUCKET}/${S3_PREFIX}/"
+
+      - name: Create AWS Data Exchange revision
+        if: env.S3_UPLOAD == 'true'
+        run: |
+          pip install boto3 -q
+          python -c "
+          import boto3, os
+          from datetime import datetime
+          adx = boto3.client('dataexchange', region_name='us-east-1')
+          dataset_id = os.environ['ADX_DATASET_ID']
+          if not dataset_id:
+            print('No ADX_DATASET_ID set, skipping')
+            exit(0)
+          ts = datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')
+          revision = adx.create_revision(
+            DataSetId=dataset_id,
+            Comment=f'Hourly TRiSM market data update {ts}'
+          )
+          rev_id = revision['Id']
+          print(f'Created revision {rev_id}')
+          bucket = os.environ['S3_BUCKET']
+          prefix = os.environ['S3_PREFIX']
+          sources = [{'Bucket': bucket, 'Key': f'{prefix}/latest/vendors.json'}]
+          job = adx.create_job(
+            Type='IMPORT_ASSETS_FROM_S3',
+            Details={
+              'ImportAssetsFromS3': {
+                'DataSetId': dataset_id,
+                'RevisionId': rev_id,
+                'AssetSources': sources
+              }
+            }
+          )
+          job_id = job['Id']
+          print(f'Created import job {job_id}')
+          import time
+          for _ in range(30):
+            status = adx.get_job(JobId=job_id)['State']
+            if status in ('COMPLETED', 'ERROR', 'CANCELLED'):
+              break
+            time.sleep(2)
+          final = adx.get_job(JobId=job_id)
+          print(f'Job status: {final["State"]}')
+          if final['State'] == 'COMPLETED':
+            adx.update_revision(DataSetId=dataset_id, RevisionId=rev_id, Finalized=True)
+            print(f'Revision {rev_id} finalized')
+          "
+        continue-on-error: true
+
       - name: Create issue on acquisition signal detection
         if: always()
         env:
@@ -120,7 +194,7 @@ jobs:
             SIGNALS=$(python3 -c "
           import json
           with open('data/fetch-report.json') as f:
-              r = json.load(f)
+            r = json.load(f)
           signals = r.get('summary', {}).get('acquisition_signals_detected', 0)
           print(signals)
           " 2>/dev/null || echo '0')
