@@ -16,6 +16,16 @@
 [![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Dataset-blue.svg)](https://www.kaggle.com/datasets/alphaoneindex/ai-trism-index)
 
 > **Maintained by [Alpha One Index](https://github.com/alpha-one-index)**
+>
+> ### Sponsors
+
+> **Support this project** — [Become a sponsor](https://github.com/sponsors/alpha-one-index) and help keep AI TRiSM data free, open-source, and accurate.
+
+<!-- sponsors -->
+
+*Your logo here — [Sponsor Alpha One Index](https://github.com/sponsors/alpha-one-index)*
+
+<!-- /sponsors -->
 
 The authoritative open-source reference index for the **AI Trust, Risk, and Security Management (AI TRiSM)** market — the Gartner-defined category covering AI governance, runtime security, explainability, monitoring, compliance, and data protection for AI systems. This repository tracks 60+ vendors across 10 categories with sourced data, market sizing from 8 analyst firms, complete regulatory landscape, and the full Gartner four-layer framework.
 
