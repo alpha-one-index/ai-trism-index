@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-10T10:06:26Z",
-  "started_at": "2026-03-10T10:04:52Z",
+  "generated_at": "2026-03-10T12:00:36Z",
+  "started_at": "2026-03-10T11:58:57Z",
   "summary": {
     "vendors_checked": 84,
     "websites_live": 65,
@@ -11,7 +11,7 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:04:53Z",
+      "checked_at": "2026-03-10T11:58:57Z",
       "funding_mentions": [
         "raise"
       ],
@@ -20,7 +20,7 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:04:53Z",
+      "checked_at": "2026-03-10T11:58:58Z",
       "funding_mentions": [
         "investment",
         "series a"
@@ -30,7 +30,7 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:04:54Z",
+      "checked_at": "2026-03-10T11:58:59Z",
       "funding_mentions": [
         "raise"
       ],
@@ -39,31 +39,31 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:04:55Z",
+      "checked_at": "2026-03-10T11:59:00Z",
       "name": "Monitaur"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:04:56Z",
+      "checked_at": "2026-03-10T11:59:01Z",
       "name": "2021.AI"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:04:57Z",
+      "checked_at": "2026-03-10T11:59:02Z",
       "name": "Saidot"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:04:58Z",
+      "checked_at": "2026-03-10T11:59:03Z",
       "name": "Trustible"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:04:59Z",
+      "checked_at": "2026-03-10T11:59:04Z",
       "funding_mentions": [
         "investment"
       ],
@@ -72,7 +72,7 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:00Z",
+      "checked_at": "2026-03-10T11:59:05Z",
       "funding_mentions": [
         "investment"
       ],
@@ -81,19 +81,19 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:01Z",
+      "checked_at": "2026-03-10T11:59:06Z",
       "name": "Domino Data Lab"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:02Z",
+      "checked_at": "2026-03-10T11:59:07Z",
       "name": "ValidMind"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:03Z",
+      "checked_at": "2026-03-10T11:59:08Z",
       "funding_mentions": [
         "investment"
       ],
@@ -102,94 +102,94 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:04Z",
+      "checked_at": "2026-03-10T11:59:08Z",
       "name": "OneTrust"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:04Z",
+      "checked_at": "2026-03-10T11:59:09Z",
       "funding_mentions": [
-        "$45 million",
-        "investment"
+        "investment",
+        "$45 million"
       ],
       "name": "Dataiku"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:05Z",
+      "checked_at": "2026-03-10T11:59:10Z",
       "name": "Lakera AI"
     },
     {
       "name": "Prompt Security",
       "website": "https://www.prompt.security",
       "website_live": null,
-      "checked_at": "2026-03-10T10:05:05Z",
+      "checked_at": "2026-03-10T11:59:10Z",
       "skip_reason": "acquired"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:06Z",
+      "checked_at": "2026-03-10T11:59:11Z",
       "name": "Lasso Security"
     },
     {
       "name": "Robust Intelligence",
       "website": "https://www.cisco.com",
       "website_live": null,
-      "checked_at": "2026-03-10T10:05:06Z",
+      "checked_at": "2026-03-10T11:59:11Z",
       "skip_reason": "acquired"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:07Z",
+      "checked_at": "2026-03-10T11:59:12Z",
       "name": "Zenity"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:07Z",
+      "checked_at": "2026-03-10T11:59:13Z",
       "name": "Straiker"
     },
     {
       "name": "Aim Security",
       "website": "https://www.aim.security",
       "website_live": null,
-      "checked_at": "2026-03-10T10:05:08Z",
+      "checked_at": "2026-03-10T11:59:13Z",
       "skip_reason": "acquired"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:08Z",
+      "checked_at": "2026-03-10T11:59:14Z",
       "funding_mentions": [
-        "raise",
-        "investment"
+        "investment",
+        "raise"
       ],
       "name": "vijil"
     },
     {
       "website_live": false,
       "http_status": 404,
-      "checked_at": "2026-03-10T10:05:09Z",
+      "checked_at": "2026-03-10T11:59:14Z",
       "name": "Palo Alto Networks — Prisma AIRS"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:09Z",
+      "checked_at": "2026-03-10T11:59:15Z",
       "funding_mentions": [
-        "series c",
-        "raises"
+        "raises",
+        "series c"
       ],
       "name": "Fiddler AI"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:10Z",
+      "checked_at": "2026-03-10T11:59:16Z",
       "funding_mentions": [
         "investment"
       ],
@@ -198,25 +198,25 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:13Z",
+      "checked_at": "2026-03-10T11:59:18Z",
       "name": "TruEra"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:14Z",
+      "checked_at": "2026-03-10T11:59:19Z",
       "name": "H2O.ai"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:14Z",
+      "checked_at": "2026-03-10T11:59:20Z",
       "name": "DataRobot"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:15Z",
+      "checked_at": "2026-03-10T11:59:20Z",
       "funding_mentions": [
         "raises"
       ],
@@ -225,65 +225,65 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:16Z",
+      "checked_at": "2026-03-10T11:59:21Z",
       "name": "HiddenLayer"
     },
     {
       "name": "CalypsoAI",
       "website": "https://www.f5.com",
       "website_live": null,
-      "checked_at": "2026-03-10T10:05:16Z",
+      "checked_at": "2026-03-10T11:59:22Z",
       "skip_reason": "acquired"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:17Z",
+      "checked_at": "2026-03-10T11:59:22Z",
       "name": "PointGuard AI"
     },
     {
       "name": "Protect AI",
       "website": "https://www.paloaltonetworks.com/prisma/airs",
       "website_live": null,
-      "checked_at": "2026-03-10T10:05:17Z",
+      "checked_at": "2026-03-10T11:59:23Z",
       "skip_reason": "acquired"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:18Z",
+      "checked_at": "2026-03-10T11:59:23Z",
       "name": "Arize AI"
     },
     {
       "name": "WhyLabs",
       "website": "https://www.whylabs.ai",
       "website_live": null,
-      "checked_at": "2026-03-10T10:05:19Z",
+      "checked_at": "2026-03-10T11:59:24Z",
       "skip_reason": "acquired"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:19Z",
+      "checked_at": "2026-03-10T11:59:24Z",
       "name": "Evidently AI"
     },
     {
       "name": "Aporia",
       "website": "https://www.aporia.com",
       "website_live": null,
-      "checked_at": "2026-03-10T10:05:19Z",
+      "checked_at": "2026-03-10T11:59:25Z",
       "skip_reason": "acquired"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:20Z",
+      "checked_at": "2026-03-10T11:59:25Z",
       "name": "Mona Labs"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:20Z",
+      "checked_at": "2026-03-10T11:59:26Z",
       "acquisition_signals": [
         "acquisition"
       ],
@@ -297,31 +297,31 @@
       "name": "Securiti AI",
       "website": "https://securiti.ai",
       "website_live": null,
-      "checked_at": "2026-03-10T10:05:21Z",
+      "checked_at": "2026-03-10T11:59:26Z",
       "skip_reason": "acquired"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:21Z",
+      "checked_at": "2026-03-10T11:59:27Z",
       "name": "Nightfall AI"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:22Z",
+      "checked_at": "2026-03-10T11:59:28Z",
       "name": "BigID"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:23Z",
+      "checked_at": "2026-03-10T11:59:28Z",
       "name": "Proofpoint"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:26Z",
+      "checked_at": "2026-03-10T11:59:30Z",
       "funding_mentions": [
         "funding"
       ],
@@ -330,7 +330,7 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:26Z",
+      "checked_at": "2026-03-10T11:59:35Z",
       "funding_mentions": [
         "series a"
       ],
@@ -339,13 +339,13 @@
     {
       "website_live": false,
       "http_status": 404,
-      "checked_at": "2026-03-10T10:05:27Z",
+      "checked_at": "2026-03-10T11:59:36Z",
       "name": "Google Perspective API / Vertex AI Safety"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:28Z",
+      "checked_at": "2026-03-10T11:59:37Z",
       "funding_mentions": [
         "investment",
         "funding"
@@ -355,7 +355,7 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:29Z",
+      "checked_at": "2026-03-10T11:59:38Z",
       "acquisition_signals": [
         "acquisition"
       ],
@@ -367,36 +367,36 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:30Z",
+      "checked_at": "2026-03-10T11:59:39Z",
       "funding_mentions": [
         "investment",
-        "funding",
-        "series a"
+        "series a",
+        "funding"
       ],
       "name": "Portal26"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:31Z",
+      "checked_at": "2026-03-10T11:59:40Z",
       "name": "AllTrue.ai TRiSM Hub"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:32Z",
+      "checked_at": "2026-03-10T11:59:41Z",
       "name": "Knostic"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:33Z",
+      "checked_at": "2026-03-10T11:59:42Z",
       "name": "Regulativ.ai"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:33Z",
+      "checked_at": "2026-03-10T11:59:43Z",
       "funding_mentions": [
         "investment"
       ],
@@ -405,13 +405,13 @@
     {
       "website_live": false,
       "http_status": 404,
-      "checked_at": "2026-03-10T10:05:35Z",
+      "checked_at": "2026-03-10T11:59:44Z",
       "name": "Microsoft — Azure AI Safety & Governance Suite"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:36Z",
+      "checked_at": "2026-03-10T11:59:45Z",
       "funding_mentions": [
         "investment",
         "funding"
@@ -421,31 +421,31 @@
     {
       "website_live": false,
       "http_status": 404,
-      "checked_at": "2026-03-10T10:05:36Z",
+      "checked_at": "2026-03-10T11:59:45Z",
       "name": "Google — AI Safety & Governance"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:37Z",
+      "checked_at": "2026-03-10T11:59:46Z",
       "name": "Patronus AI"
     },
     {
       "website_live": false,
       "http_status": -1,
-      "checked_at": "2026-03-10T10:05:44Z",
+      "checked_at": "2026-03-10T11:59:53Z",
       "name": "TrojAI"
     },
     {
       "website_live": false,
       "http_status": 403,
-      "checked_at": "2026-03-10T10:05:44Z",
+      "checked_at": "2026-03-10T11:59:54Z",
       "name": "Neptune.ai"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:45Z",
+      "checked_at": "2026-03-10T11:59:55Z",
       "acquisition_signals": [
         "now part of"
       ],
@@ -458,15 +458,15 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:46Z",
+      "checked_at": "2026-03-10T11:59:56Z",
       "acquisition_signals": [
         "acquisition"
       ],
       "funding_mentions": [
-        "$5 million",
         "investment",
         "raises",
         "$16.4 billion",
+        "$5 million",
         "raise"
       ],
       "name": "EQTY Lab"
@@ -474,13 +474,13 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:47Z",
+      "checked_at": "2026-03-10T11:59:57Z",
       "name": "Vals AI"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:47Z",
+      "checked_at": "2026-03-10T11:59:57Z",
       "funding_mentions": [
         "investment"
       ],
@@ -489,54 +489,54 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:48Z",
+      "checked_at": "2026-03-10T11:59:58Z",
       "name": "Howso"
     },
     {
       "website_live": false,
       "http_status": -1,
-      "checked_at": "2026-03-10T10:05:55Z",
+      "checked_at": "2026-03-10T12:00:05Z",
       "name": "Untangle AI"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:05:56Z",
+      "checked_at": "2026-03-10T12:00:06Z",
       "name": "CausaLens"
     },
     {
       "website_live": false,
       "http_status": -1,
-      "checked_at": "2026-03-10T10:06:03Z",
+      "checked_at": "2026-03-10T12:00:13Z",
       "name": "Censius"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:04Z",
+      "checked_at": "2026-03-10T12:00:14Z",
       "name": "Fairnow"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:06Z",
+      "checked_at": "2026-03-10T12:00:16Z",
       "name": "Anch.AI"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:06Z",
+      "checked_at": "2026-03-10T12:00:16Z",
       "funding_mentions": [
         "$3 billion",
-        "funding",
-        "raises"
+        "raises",
+        "funding"
       ],
       "name": "Atlan"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:07Z",
+      "checked_at": "2026-03-10T12:00:17Z",
       "funding_mentions": [
         "investment",
         "$11 million"
@@ -546,37 +546,37 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:08Z",
+      "checked_at": "2026-03-10T12:00:18Z",
       "name": "Resistant AI"
     },
     {
       "website_live": false,
       "http_status": -1,
-      "checked_at": "2026-03-10T10:06:15Z",
+      "checked_at": "2026-03-10T12:00:25Z",
       "name": "SparkCognition"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:16Z",
+      "checked_at": "2026-03-10T12:00:26Z",
       "name": "SAS Institute"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:16Z",
+      "checked_at": "2026-03-10T12:00:26Z",
       "name": "FICO"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:17Z",
+      "checked_at": "2026-03-10T12:00:27Z",
       "name": "Salesforce"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:18Z",
+      "checked_at": "2026-03-10T12:00:28Z",
       "funding_mentions": [
         "investment"
       ],
@@ -585,13 +585,13 @@
     {
       "website_live": false,
       "http_status": 403,
-      "checked_at": "2026-03-10T10:06:18Z",
+      "checked_at": "2026-03-10T12:00:29Z",
       "name": "ServiceNow"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:20Z",
+      "checked_at": "2026-03-10T12:00:30Z",
       "funding_mentions": [
         "investment"
       ],
@@ -600,13 +600,13 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:21Z",
+      "checked_at": "2026-03-10T12:00:31Z",
       "name": "LogicManager"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:22Z",
+      "checked_at": "2026-03-10T12:00:33Z",
       "funding_mentions": [
         "investment"
       ],
@@ -615,25 +615,25 @@
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:23Z",
+      "checked_at": "2026-03-10T12:00:34Z",
       "funding_mentions": [
-        "raise",
         "investment",
         "$969 billion",
-        "raises"
+        "raises",
+        "raise"
       ],
       "name": "Moody's Analytics"
     },
     {
       "website_live": false,
       "http_status": 403,
-      "checked_at": "2026-03-10T10:06:24Z",
+      "checked_at": "2026-03-10T12:00:34Z",
       "name": "Akamai AI Firewall"
     },
     {
       "website_live": true,
       "http_status": 200,
-      "checked_at": "2026-03-10T10:06:24Z",
+      "checked_at": "2026-03-10T12:00:35Z",
       "name": "Qlik"
     }
   ],
@@ -642,7 +642,7 @@
       "id": "eu-ai-act",
       "url": "https://artificialintelligenceact.eu/",
       "reachable": true,
-      "checked_at": "2026-03-10T10:06:25Z",
+      "checked_at": "2026-03-10T12:00:36Z",
       "found_terms": [
         "enforcement",
         "compliance",
@@ -654,7 +654,7 @@
       "id": "nist-ai-rmf",
       "url": "https://www.nist.gov/artificial-intelligence",
       "reachable": true,
-      "checked_at": "2026-03-10T10:06:25Z",
+      "checked_at": "2026-03-10T12:00:36Z",
       "found_terms": [
         "ai rmf",
         "framework",
@@ -665,7 +665,7 @@
       "id": "iso-42001",
       "url": "https://www.iso.org/standard/81230.html",
       "reachable": true,
-      "checked_at": "2026-03-10T10:06:26Z",
+      "checked_at": "2026-03-10T12:00:36Z",
       "found_terms": [
         "42001",
         "2024"
