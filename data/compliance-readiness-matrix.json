@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "name": "AI TRiSM Compliance Readiness Matrix",
+    "description": "Proprietary mapping of AI TRiSM vendor capabilities against global regulatory requirements. Tracks which vendors meet specific compliance obligations across EU AI Act, NIST AI RMF, ISO 42001, and other frameworks.",
+    "version": "1.0.0",
+    "last_updated": "2026-03-12T00:00:00Z",
+    "source": "Alpha One Index - AI TRiSM Market Index",
+    "methodology": "Vendor capabilities mapped against regulatory requirement categories. Scores: full (vendor explicitly addresses requirement), partial (vendor has related capability), none (no coverage found). Based on public documentation, product pages, and compliance certifications.",
+    "license": "CC BY 4.0 - cite as: Alpha One Index. AI TRiSM Compliance Readiness Matrix. https://github.com/alpha-one-index/ai-trism-index",
+    "regulations_tracked": 6,
+    "vendors_assessed": 12,
+    "requirement_categories": 8
+  },
+  "requirement_categories": [
+    {
+      "id": "explainability",
+      "name": "Model Explainability & Transparency",
+      "regulations": ["eu-ai-act-art-13", "nist-ai-rmf-govern", "iso-42001-a6"]
+    },
+    {
+      "id": "risk-assessment",
+      "name": "AI Risk Assessment & Classification",
+      "regulations": ["eu-ai-act-art-9", "nist-ai-rmf-map", "iso-42001-a5"]
+    },
+    {
+      "id": "bias-fairness",
+      "name": "Bias Detection & Fairness Testing",
+      "regulations": ["eu-ai-act-art-10", "nist-ai-rmf-measure", "eeoc-guidance"]
+    },
+    {
+      "id": "data-governance",
+      "name": "Training Data Governance",
+      "regulations": ["eu-ai-act-art-10", "gdpr-art-22", "ccpa"]
+    },
+    {
+      "id": "security-robustness",
+      "name": "Security & Adversarial Robustness",
+      "regulations": ["eu-ai-act-art-15", "nist-ai-rmf-manage", "iso-42001-a8"]
+    },
+    {
+      "id": "human-oversight",
+      "name": "Human Oversight & Control",
+      "regulations": ["eu-ai-act-art-14", "nist-ai-rmf-govern", "iso-42001-a7"]
+    },
+    {
+      "id": "incident-reporting",
+      "name": "Incident Reporting & Monitoring",
+      "regulations": ["eu-ai-act-art-62", "nist-ai-rmf-manage", "sec-guidance"]
+    },
+    {
+      "id": "audit-documentation",
+      "name": "Audit Trail & Documentation",
+      "regulations": ["eu-ai-act-art-11", "nist-ai-rmf-govern", "iso-42001-a9", "sox"]
+    }
+  ],
+  "vendor_assessments": [
+    {
+      "vendor": "IBM Watson OpenScale (watsonx.governance)",
+      "assessed_date": "2026-03-01",
+      "overall_score": 87.5,
+      "scores": {
+        "explainability": "full",
+        "risk-assessment": "full",
+        "bias-fairness": "full",
+        "data-governance": "full",
+        "security-robustness": "partial",
+        "human-oversight": "full",
+        "incident-reporting": "full",
+        "audit-documentation": "full"
+      }
+    },
+    {
+      "vendor": "Google Model Cards / Vertex AI",
+      "assessed_date": "2026-03-01",
+      "overall_score": 75.0,
+      "scores": {
+        "explainability": "full",
+        "risk-assessment": "partial",
+        "bias-fairness": "full",
+        "data-governance": "full",
+        "security-robustness": "full",
+        "human-oversight": "partial",
+        "incident-reporting": "partial",
+        "audit-documentation": "partial"
+      }
+    },
+    {
+      "vendor": "Microsoft Azure AI (Responsible AI)",
+      "assessed_date": "2026-03-01",
+      "overall_score": 81.25,
+      "scores": {
+        "explainability": "full",
+        "risk-assessment": "full",
+        "bias-fairness": "full",
+        "data-governance": "partial",
+        "security-robustness": "full",
+        "human-oversight": "full",
+        "incident-reporting": "partial",
+        "audit-documentation": "full"
+      }
+    },
+    {
+      "vendor": "Credo AI",
+      "assessed_date": "2026-03-01",
+      "overall_score": 93.75,
+      "scores": {
+        "explainability": "full",
+        "risk-assessment": "full",
+        "bias-fairness": "full",
+        "data-governance": "full",
+        "security-robustness": "full",
+        "human-oversight": "full",
+        "incident-reporting": "full",
+        "audit-documentation": "partial"
+      }
+    },
+    {
+      "vendor": "Arthur AI",
+      "assessed_date": "2026-03-01",
+      "overall_score": 81.25,
+      "scores": {
+        "explainability": "full",
+        "risk-assessment": "full",
+        "bias-fairness": "full",
+        "data-governance": "partial",
+        "security-robustness": "partial",
+        "human-oversight": "full",
+        "incident-reporting": "full",
+        "audit-documentation": "full"
+      }
+    },
+    {
+      "vendor": "Fiddler AI",
+      "assessed_date": "2026-03-01",
+      "overall_score": 68.75,
+      "scores": {
+        "explainability": "full",
+        "risk-assessment": "partial",
+        "bias-fairness": "full",
+        "data-governance": "partial",
+        "security-robustness": "partial",
+        "human-oversight": "partial",
+        "incident-reporting": "full",
+        "audit-documentation": "partial"
+      }
+    },
+    {
+      "vendor": "Weights & Biases",
+      "assessed_date": "2026-03-01",
+      "overall_score": 50.0,
+      "scores": {
+        "explainability": "partial",
+        "risk-assessment": "none",
+        "bias-fairness": "partial",
+        "data-governance": "full",
+        "security-robustness": "partial",
+        "human-oversight": "none",
+        "incident-reporting": "partial",
+        "audit-documentation": "full"
+      }
+    },
+    {
+      "vendor": "Robust Intelligence (now Cisco)",
+      "assessed_date": "2026-03-01",
+      "overall_score": 75.0,
+      "scores": {
+        "explainability": "partial",
+        "risk-assessment": "full",
+        "bias-fairness": "full",
+        "data-governance": "partial",
+        "security-robustness": "full",
+        "human-oversight": "partial",
+        "incident-reporting": "full",
+        "audit-documentation": "partial"
+      }
+    },
+    {
+      "vendor": "Holistic AI",
+      "assessed_date": "2026-03-01",
+      "overall_score": 87.5,
+      "scores": {
+        "explainability": "full",
+        "risk-assessment": "full",
+        "bias-fairness": "full",
+        "data-governance": "full",
+        "security-robustness": "partial",
+        "human-oversight": "full",
+        "incident-reporting": "full",
+        "audit-documentation": "full"
+      }
+    },
+    {
+      "vendor": "TruEra",
+      "assessed_date": "2026-03-01",
+      "overall_score": 75.0,
+      "scores": {
+        "explainability": "full",
+        "risk-assessment": "full",
+        "bias-fairness": "full",
+        "data-governance": "partial",
+        "security-robustness": "partial",
+        "human-oversight": "partial",
+        "incident-reporting": "partial",
+        "audit-documentation": "full"
+      }
+    },
+    {
+      "vendor": "Monitaur",
+      "assessed_date": "2026-03-01",
+      "overall_score": 81.25,
+      "scores": {
+        "explainability": "full",
+        "risk-assessment": "full",
+        "bias-fairness": "partial",
+        "data-governance": "full",
+        "security-robustness": "partial",
+        "human-oversight": "full",
+        "incident-reporting": "full",
+        "audit-documentation": "full"
+      }
+    },
+    {
+      "vendor": "Lakera",
+      "assessed_date": "2026-03-01",
+      "overall_score": 56.25,
+      "scores": {
+        "explainability": "none",
+        "risk-assessment": "partial",
+        "bias-fairness": "none",
+        "data-governance": "partial",
+        "security-robustness": "full",
+        "human-oversight": "partial",
+        "incident-reporting": "full",
+        "audit-documentation": "full"
+      }
+    }
+  ],
+  "scoring_methodology": {
+    "full": 100,
+    "partial": 50,
+    "none": 0,
+    "overall_formula": "Average of all category scores"
+  }
+}
