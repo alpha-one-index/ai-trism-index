@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-03-14T10:59:56Z",
+    "last_updated": "2026-03-14T11:50:16Z",
     "version": "1.0.0",
     "description": "Global AI regulatory compliance tracker with key milestones, penalties, and enforcement dates",
     "source": "Alpha One Index — AI TRiSM Market Index",
@@ -79,7 +79,7 @@
         "GPAI transparency"
       ],
       "_fetch_meta": {
-        "last_checked": "2026-03-14T10:59:56Z",
+        "last_checked": "2026-03-14T11:50:16Z",
         "source_reachable": true,
         "found_terms": [
           "enforcement",
@@ -145,7 +145,7 @@
         "AI security"
       ],
       "_fetch_meta": {
-        "last_checked": "2026-03-14T10:59:56Z",
+        "last_checked": "2026-03-14T11:50:16Z",
         "source_reachable": true,
         "found_terms": [
           "ai rmf",
@@ -194,7 +194,7 @@
         "data governance"
       ],
       "_fetch_meta": {
-        "last_checked": "2026-03-14T10:59:56Z",
+        "last_checked": "2026-03-14T11:50:16Z",
         "source_reachable": true,
         "found_terms": [
           "42001",
